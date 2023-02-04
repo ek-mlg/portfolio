@@ -1,0 +1,21 @@
+.SkillsBlock {
+    height: 100vh;
+    background-color: #d4ffc0;
+}
+
+.SkillsContainer {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.Title {
+    background-color: #eeeef5;
+}
+
+.Skills {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
