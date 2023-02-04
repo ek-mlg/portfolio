@@ -6,7 +6,7 @@ const Nav = () => {
         <div className={s.Nav}>
             <a href="">Home</a>
             <a href="">Skills</a>
-            <a href="">Projects</a>
+            <a href="">Works</a>
             <a href="">Contacts</a>
         </div>
     );

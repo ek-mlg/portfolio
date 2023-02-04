@@ -3,6 +3,10 @@
     background-color: #ffd4f0;
 }
 
+.Container {
+    gap: 20%;
+}
+
 .Text {
     width: 300px;
     background-color: #f7f7f7;

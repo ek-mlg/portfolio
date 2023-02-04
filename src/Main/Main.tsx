@@ -6,7 +6,7 @@ import sContainer from '../Common/Styles/Container.module.css';
 const Main = () => {
     return (
         <div className={s.MainBlock}>
-            <div className={sContainer.Container}>
+            <div className={`${sContainer.Container} ${s.Container}`}>
                 <div className={s.Text}>
                     <span>Hi there</span>
                     <h1>I am Egor Kirillov</h1>

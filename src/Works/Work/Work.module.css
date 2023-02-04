@@ -1,0 +1,36 @@
+.Work {
+    width: 450px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+
+}
+
+.Image {
+    height: 320px;
+    width: 100%;
+    background-color: #eeeef5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button {
+    height: 40px;
+    width: 140px;
+    font-size: 16px;
+}
+
+.WorkTitle {
+    background-color: aliceblue;
+    margin-left: 5%;
+}
+
+.WorkDescription {
+    background-color: aliceblue;
+    width: 90%;
+    height: 20%;
+    margin: 0 auto 5% 5%;
+}
