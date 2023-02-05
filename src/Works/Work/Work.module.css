@@ -8,7 +8,7 @@
 
 }
 
-.Image {
+.ImgContainer {
     height: 320px;
     width: 100%;
     background-color: #eeeef5;
@@ -24,12 +24,12 @@
 }
 
 .WorkTitle {
-    background-color: aliceblue;
+    background-color: bisque;
     margin-left: 5%;
 }
 
 .WorkDescription {
-    background-color: aliceblue;
+    background-color: bisque;
     width: 90%;
     height: 20%;
     margin: 0 auto 5% 5%;

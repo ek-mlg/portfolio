@@ -4,6 +4,9 @@ import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Skills from "./Skills/Skills";
 import Works from "./Works/Works";
+import Contacts from "./Contacts/Contacts";
+import Footer from "./Footer/Footer";
+import JobOptions from "./ JobOptions / JobOptions";
 
 function App() {
     return (
@@ -12,6 +15,9 @@ function App() {
             <Main />
             <Skills />
             <Works />
+            <JobOptions />
+            <Contacts />
+            <Footer />
         </div>
     );
 }

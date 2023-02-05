@@ -9,7 +9,7 @@ type WorkPropsType = {
 const Work:React.FC<WorkPropsType> = ({workTitle, workDescription}) => {
     return (
         <div className={s.Work}>
-            <div className={s.Image}>
+            <div className={s.ImgContainer}>
                 <button className={s.Button}>Button</button>
             </div>
             <h3 className={s.WorkTitle}>{workTitle}</h3>
