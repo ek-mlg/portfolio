@@ -11,11 +11,6 @@
     box-sizing: border-box;
 }
 
-.Title {
-    background-color: #eeeef5;
-    text-align: center;
-}
-
 .Button {
     height: 40px;
     width: 140px;

@@ -1,6 +1,6 @@
 .WorksBlock {
-    min-height: 100vh;
-    background-color: #d296bb;
+    min-height: auto;
+    background-color: #111;
 }
 
 .WorksContainer {
@@ -8,15 +8,18 @@
     flex-direction: column;
 }
 
-.Title {
-    background-color: #eeeef5;
-}
-
 .Works {
-    border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
+    align-items: flex-start;
+    padding-top: 105px;
+}
+
+@media (max-width: 1040px) {
+    .Works{
+        gap: 50px;
+    }
 }

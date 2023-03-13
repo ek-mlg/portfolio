@@ -1,15 +1,15 @@
 .Work {
-    width: 450px;
-    background-color: #f7f7f7;
+    width: 355px;
+    background-color: #000;;
     display: flex;
     flex-direction: column;
     text-align: start;
     align-items: flex-start;
-
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1)
 }
 
 .ImgContainer {
-    height: 320px;
+    height: 275px;
     width: 100%;
     background-color: #eeeef5;
     display: flex;
@@ -24,13 +24,25 @@
 }
 
 .WorkTitle {
-    background-color: bisque;
-    margin-left: 5%;
+    margin: 10% 7% 7% 10%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    outline: none;
+    line-height: 1.4;
+    font-family: "Poppins", serif;
+    letter-spacing: 0.2px;
 }
 
 .WorkDescription {
-    background-color: bisque;
-    width: 90%;
-    height: 20%;
-    margin: 0 auto 5% 5%;
+    width: 80%;
+    margin: 0 10% 7% 10%;
+    color: #bbb;
+    font-family: "Poppins", serif;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    line-height: 1.8;
 }

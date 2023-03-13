@@ -8,10 +8,6 @@
     flex-direction: column;
 }
 
-.Title {
-    background-color: #eeeef5;
-}
-
 .Form {
     border: 1px solid red;
     width: 280px; /*Будем фиксить медиазапросами */
