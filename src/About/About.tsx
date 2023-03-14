@@ -13,7 +13,7 @@ const About = () => {
                 </div>
                 <div className={s.TextContainer}>
                     <Title title={"Egor Kirillov"} second={"About"}/>
-                    <span className={s.SpanAbout}>Frontend Developer | React, Redux</span>
+                    <span className={s.SpanAbout}>Frontend Developer | React</span>
 
                     <div className={s.Text}>
                         <p>I'm considering office or remote work options.

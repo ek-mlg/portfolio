@@ -1,6 +1,6 @@
 .SkillsBlock {
-    min-height: 100vh;
-    background-color: #d4ffc0;
+    min-height: auto;
+    background-color: #000;
 }
 
 .SkillsContainer {
@@ -9,6 +9,7 @@
 }
 
 .Skills {
+    padding-top: 105px;
     border: 1px solid;
     width: 100%;
     display: flex;
