@@ -6,16 +6,16 @@ import Skills from "./Skills/Skills";
 import Works from "./Works/Works";
 import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
-import JobOptions from "./ JobOptions / JobOptions";
+import About from "./About/About";
 
 function App() {
     return (
         <div className="App">
             <Header />
             <Main />
+            <About />
             <Skills />
             <Works />
-            <JobOptions />
             <Contacts />
             <Footer />
         </div>

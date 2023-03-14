@@ -1,0 +1,70 @@
+.AboutBlock {
+    min-height: auto;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+}
+
+.AboutContainer {
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.ImgContainer {
+    width: 50%;
+    background-color: #d296bb;
+    height: 400px;
+}
+
+.TextContainer {
+    width: 50%;
+}
+
+.SpanAbout {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    color: #bbb;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.Text {
+    padding-top: 32px;
+    margin-bottom: 40px;
+    width: 545px;
+    border-top: 1px solid rgba(255,255,255,.1);
+
+    font-style: italic;
+    color: #bbb;
+    font-family: "Mulish", serif;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+
+.Button {
+    height: 40px;
+    width: 140px;
+    font-size: 16px;
+}
+
+@media (max-width: 1040px) {
+    .ImgContainer {
+        width: 100%;
+    }
+    .TextContainer {
+        width: 100%;
+    }
+    .SpanAbout {
+        padding-top: 50px;
+    }
+    .Text {
+        width: 310px;
+    }
+}
