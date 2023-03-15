@@ -51,6 +51,7 @@
     vertical-align: middle;
     box-sizing: border-box;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .Textarea {
@@ -68,6 +69,7 @@
     line-height: 1.4;
     box-sizing: border-box;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .Button {
@@ -91,10 +93,12 @@
     font-family: "Poppins", serif;
     letter-spacing: 0.2px;
     margin: 0 0 25px 0;
+    font-style: normal;
 }
 
 .AddressSpan {
     color: #bbb;
+    text-decoration: none;
 }
 
 .Icons {

@@ -9,7 +9,7 @@ const About = () => {
             <div className={`${sContainer.Container} ${s.AboutContainer}`}>
 
                 <div className={s.ImgContainer}>
-                    <img className={s.Img}/>
+                    <img className={s.Img} alt={"Img"}/>
                 </div>
                 <div className={s.TextContainer}>
                     <Title title={"Egor Kirillov"} second={"About"}/>

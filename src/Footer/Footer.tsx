@@ -3,16 +3,31 @@ import s from './Footer.module.css';
 import Icons from "../Icons/Icons";
 
 const Footer = () => {
+
+    const date = new Date()
+    const yearDate = date.getFullYear()
+
     return (
         <div className={s.Footer}>
-            <h2 className={s.Title}>Egor Kirillov</h2>
-            <div className={s.Container}>
-                <Icons src={""} alt={""}/>
-                <Icons src={""} alt={""}/>
-                <Icons src={""} alt={""}/>
-                <Icons src={""} alt={""}/>
+            <div className={s.FooterWrapper}>
+                <div className={s.Container}>
+                    <Icons src={""} alt={"VK"}/>
+                    <Icons src={""} alt={"Facebook"}/>
+                    <Icons src={""} alt={"Insta"}/>
+                    <Icons src={""} alt={"Discord"}/>
+                </div>
+                <div className={s.TextContainer}>
+                    <span className={s.Title}>Egor Kirillov</span>
+                    <span className={s.Title}>Frontend-developer</span>
+                </div>
+                <div className={s.TextContainer}>
+                    <a className={s.Info} href={"mailto:ek.mlg@yandex.ru"}>ek.mlg@yandex.ru</a>
+                    <a className={s.Info} href={"tel:+7 (919) 016-17-63"}>+7 (919) 016-17-63</a>
+                </div>
+                <div className={s.TextContainer}>
+                    <span className={s.Copyright}>© {yearDate} All rights reserved</span>
+                </div>
             </div>
-            <h3 className={s.Copyright}>© 2023 All rights reserved</h3>
         </div>
     );
 };

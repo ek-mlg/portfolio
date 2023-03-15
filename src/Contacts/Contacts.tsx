@@ -27,19 +27,34 @@ const Contacts = () => {
                         <button className={s.Button}>Send</button>
                     </form>
                     <address className={s.AddressBlock}>
-                        <h3 className={s.AddressTitle}>
-                            e-mail:
-                            <span className={s.AddressSpan}> ek.mlg@yandex.ru</span>
+                        <h3 className={s.AddressTitle}>Info:</h3>
+                        <h3 className={s.AddressTitle}>e-mail: <a
+                            href={"mailto:ek.mlg@yandex.ru"}
+                            className={s.AddressSpan}
+                        >
+                            ek.mlg@yandex.ru
+                        </a>
                         </h3>
-                        <h3 className={s.AddressTitle}>
-                            telephone:
-                            <span className={s.AddressSpan}> +7 (919) 016-17-63</span>
+                        <h3 className={s.AddressTitle}>telephone: <a
+                            href={"tel:+7 (919) 016-17-63"}
+                            className={s.AddressSpan}
+                        >
+                            +7 (919) 016-17-63
+                        </a>
                         </h3>
                         <div className={s.Icons}>
-                            <Icons src={WhatsApp} alt={"WhatsApp"}/>
-                            <Icons src={In} alt={"Linkedin"}/>
-                            <Icons src={Git} alt={"GitHub"}/>
-                            <Icons src={Telega} alt={"Telegram"}/>
+                            <a href={"https://wa.me/89190161763"} target={"_blank"} rel={"noreferrer"}>
+                                <Icons src={WhatsApp} alt={"WhatsApp"}/>
+                            </a>
+                            <a href={"https://www.linkedin.com/in/ek-mlg"} target={"_blank"} rel={"noreferrer"}>
+                                <Icons src={In} alt={"Linkedin"}/>
+                            </a>
+                            <a href={"https://github.com/ek-mlg"} target={"_blank"} rel={"noreferrer"}>
+                                <Icons src={Git} alt={"GitHub"}/>
+                            </a>
+                            <a href={"https://t.me/break_the_rules_eat_grasses"} target={"_blank"} rel={"noreferrer"}>
+                                <Icons src={Telega} alt={"Telegram"}/>
+                            </a>
                         </div>
                     </address>
                 </div>
