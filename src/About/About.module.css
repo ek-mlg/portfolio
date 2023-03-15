@@ -8,11 +8,13 @@
 .AboutContainer {
     box-sizing: border-box;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 .ImgContainer {
     width: 50%;
     height: 450px;
+    background-color: aquamarine;
 }
 
 .Img {
@@ -78,5 +80,8 @@
         justify-content: center;
         height: 310px;
         width: 310px;
+    }
+    .AboutContainer {
+        margin-bottom: 140px;
     }
 }

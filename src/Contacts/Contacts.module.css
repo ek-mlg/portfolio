@@ -15,6 +15,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
+    margin-bottom: 200px;
 }
 
 .Form {
@@ -108,7 +109,8 @@
 
 @media (max-width: 1040px) {
     .Contacts {
-        gap: 50px
+        gap: 50px;
+        margin-bottom: 140px;
     }
     .AddressBlock {
         width: 100%;

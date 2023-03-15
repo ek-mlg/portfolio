@@ -16,10 +16,12 @@
     box-sizing: border-box;
     align-items: flex-start;
     padding-top: 105px;
+    margin-bottom: 200px;
 }
 
 @media (max-width: 1040px) {
     .Works{
         gap: 50px;
+        margin-bottom: 140px;
     }
 }

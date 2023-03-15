@@ -16,4 +16,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
+    margin-bottom: 200px;
+}
+
+@media (max-width: 1040px) {
+    .Skills {
+        margin-bottom: 140px;
+    }
 }
