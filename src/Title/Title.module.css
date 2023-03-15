@@ -1,6 +1,6 @@
 .Title {
     position: relative;
-    margin: 0;
+    margin: 200px 0 0 0;
     padding: 0;
 
     color: #fff;
@@ -32,6 +32,7 @@
 @media (max-width: 1040px) {
     .Title{
         font-size: 30px;
+        margin: 140px 0 0 0;
     }
     .SecondTitle {
         font-size: 55px;
