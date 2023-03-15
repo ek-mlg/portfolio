@@ -13,9 +13,9 @@ const Skills = () => {
             <div className={`${sContainer.Container} ${s.SkillsContainer}`}>
                 <Title title={"Skills &"} second={"Abilities"}/>
                 <div className={s.Skills}>
-                    <Skill title={'TypeScript'} description={'test description1'} src={TS}/>
-                    <Skill title={'Redux'} description={'test description2'} src={Redux}/>
-                    <Skill title={'React'} description={'Modern and mobile-ready website that will help you reach all of your marketing.'} src={ReactSVG}/>
+                    <Skill title={'TypeScript'} description={'test description1'} src={TS} alt={"TS"}/>
+                    <Skill title={'Redux'} description={'test description2'} src={Redux} alt={"Redux"}/>
+                    <Skill title={'React'} description={'Modern and mobile-ready website that will help you reach all of your marketing.'} src={ReactSVG} alt={"React"}/>
 
                     {/*<Skill title={'CSS'} description={'test description1'} src={TS}/>
                     <Skill title={'SASS'} description={'test description2'} src={Redux}/>

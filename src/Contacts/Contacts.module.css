@@ -1,6 +1,6 @@
 .ContactsBlock {
-    min-height: 100vh;
-    background-color: #ffd4f0;
+    min-height: auto;
+    background-color: #000;
 }
 
 .ContactsContainer {
@@ -8,20 +8,66 @@
     flex-direction: column;
 }
 
+.Contacts {
+    padding-top: 105px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
 .Form {
-    border: 1px solid red;
-    width: 280px; /*Будем фиксить медиазапросами */
-    gap: 10px;
+    width: 470px; /*Будем фиксить медиазапросами */
+    gap: 20px;
     display: flex;
     flex-direction: column;
 }
 
+.Text {
+    padding-bottom: 20px;
+    font-style: italic;
+    vertical-align: baseline;
+    color: #bbb;
+    font-family: "Mulish", serif;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    word-wrap: break-word;
+    font-weight: 400;
+}
+
 .Input {
-    height: 30px;
+    border: 1px solid rgba(255, 255, 255,.3);
+    color: #fff;
+    background-color: transparent;
+    font-style: italic;
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    font-family: "Poppins", serif;
+    line-height: 1.6;
+    height: 44px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .Textarea {
-    height: 100px;
+    height: 120px;
+    resize: none;
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-style: italic;
+    width: 100%;
+    border: 1px solid rgba(255,255,255,.3);
+    color: #fff;
+    font-size: 13px;
+    font-family: "Poppins", serif;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .Button {
@@ -29,4 +75,42 @@
     width: 140px;
     font-size: 16px;
     margin-top: 25px;
+}
+
+.AddressBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.AddressTitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.4;
+    font-family: "Poppins", serif;
+    letter-spacing: 0.2px;
+    margin: 0 0 25px 0;
+}
+
+.AddressSpan {
+    color: #bbb;
+}
+
+.Icons {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 1040px) {
+    .Contacts {
+        gap: 50px
+    }
+    .AddressBlock {
+        width: 100%;
+    }
+    .Icons {
+        justify-content: center;
+        gap: 20px;
+    }
 }
