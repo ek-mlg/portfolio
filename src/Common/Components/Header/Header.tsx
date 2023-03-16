@@ -5,7 +5,10 @@ import Nav from "../Nav/Nav";
 const Header = () => {
     return (
         <header className={s.Header}>
-            <Nav />
+            <div className={s.HeaderContainer}>
+                <h3 className={s.Logo}>eK</h3>
+                <Nav/>
+            </div>
         </header>
     );
 };

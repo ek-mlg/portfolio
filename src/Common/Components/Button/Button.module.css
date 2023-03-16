@@ -1,0 +1,28 @@
+.Button {
+    height: 60px;
+    width: 160px;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    line-height: 57px;
+    font-weight: 400;
+
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+    box-sizing: border-box;
+    font-style: italic;
+    cursor: pointer;
+
+
+    letter-spacing: .8px;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+
+    border-radius: 30px;
+}
+
+.Button:hover {
+    background-color: #000;
+    color: #fff;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import s from "./Work.module.css";
+import Button from "../../Button/Button";
 
 type WorkPropsType = {
     workTitle: string
@@ -10,7 +11,7 @@ const Work:React.FC<WorkPropsType> = ({workTitle, workDescription}) => {
     return (
         <div className={s.Work}>
             <div className={s.ImgContainer}>
-                <button className={s.Button}>Button</button>
+                <Button/>
             </div>
             <h3 className={s.WorkTitle}>{workTitle}</h3>
             <span className={s.WorkDescription}>{workDescription}</span>

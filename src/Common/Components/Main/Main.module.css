@@ -1,0 +1,35 @@
+.MainBlock {
+    height: 100vh;
+    background-color: #ffd4f0;
+}
+
+.Container {
+    height: 100%;
+    width: 100%;
+}
+
+.Text {
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 1;
+}
+
+.Photo {
+    width: 65%;
+    height: 100%;
+    background-color: aquamarine;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 1040px) {
+    .Photo {
+        width: 100%;
+    }
+    .Text {
+        top: 75%;
+        left: 10%;
+    }
+}

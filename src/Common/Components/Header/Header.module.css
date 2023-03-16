@@ -1,0 +1,32 @@
+.Header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.Logo {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    cursor: default;
+}
+
+.HeaderContainer {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

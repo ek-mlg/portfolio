@@ -15,11 +15,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
-    margin-bottom: 200px;
 }
 
 .Form {
-    width: 470px; /*Будем фиксить медиазапросами */
+    width: 470px;
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -73,28 +72,31 @@
     border-radius: 5px;
 }
 
-.Button {
-    height: 40px;
-    width: 140px;
-    font-size: 16px;
-    margin-top: 25px;
-}
-
 .AddressBlock {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.AddressTitle {
+.Info {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     color: #fff;
     line-height: 1.4;
     font-family: "Poppins", serif;
     letter-spacing: 0.2px;
-    margin: 0 0 25px 0;
     font-style: normal;
+}
+
+.AddressTitle {
+    color: #bbb;
+    font-family: "Poppins", serif;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    margin: 0 0 25px 0;
+    line-height: 1.8;
 }
 
 .AddressSpan {
@@ -105,18 +107,17 @@
 .Icons {
     display: flex;
     gap: 20px;
+    margin-top: 20px;
 }
 
 @media (max-width: 1040px) {
     .Contacts {
         gap: 50px;
-        margin-bottom: 140px;
     }
     .AddressBlock {
         width: 100%;
     }
     .Icons {
-        justify-content: center;
-        gap: 20px;
+        justify-content: space-between;
     }
 }

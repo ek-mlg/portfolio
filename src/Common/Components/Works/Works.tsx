@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Works.module.css';
-import sContainer from "../Common/Styles/Container.module.css";
+import sContainer from "../../Styles/Container.module.css";
 import Work from "./Work/Work";
 import Title from "../Title/Title";
 

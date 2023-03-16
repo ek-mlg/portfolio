@@ -1,7 +1,8 @@
 import React from 'react';
 import s from './About.module.css';
-import sContainer from '../Common/Styles/Container.module.css';
+import sContainer from '../../Styles/Container.module.css';
 import Title from "../Title/Title";
+import Button from "../Button/Button";
 
 const About = () => {
     return (
@@ -27,7 +28,7 @@ const About = () => {
                             from discussion and collaboration.
                         </p>
                     </div>
-                    <button className={s.Button}>Button</button>
+                    <Button/>
                 </div>
             </div>
         </div>

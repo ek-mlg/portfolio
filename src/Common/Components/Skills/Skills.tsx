@@ -1,11 +1,11 @@
 import React from 'react';
 import s from './Skills.module.css';
-import sContainer from "../Common/Styles/Container.module.css";
+import sContainer from "../../Styles/Container.module.css";
 import Skill from "./Skill/Skill";
 import Title from "../Title/Title";
-import TS from '../Common/Assets/image/icons/ts.svg';
-import Redux from '../Common/Assets/image/icons/redux.svg';
-import ReactSVG from '../Common/Assets/image/icons/react.svg';
+import TS from '../../Assets/image/icons/ts.svg';
+import Redux from '../../Assets/image/icons/redux.svg';
+import ReactSVG from '../../Assets/image/icons/react.svg';
 
 const Skills = () => {
     return (

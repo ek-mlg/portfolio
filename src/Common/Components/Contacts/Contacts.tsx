@@ -1,12 +1,13 @@
 import React from 'react';
 import s from './Contacts.module.css';
-import sContainer from '../Common/Styles/Container.module.css';
-import Title from "../Title/Title";
+import sContainer from '../../Styles/Container.module.css';
 import Icons from "../Icons/Icons";
-import WhatsApp from "../Common/Assets/image/icons/whatsapp.svg";
-import In from "../Common/Assets/image/icons/in.svg";
-import Git from "../Common/Assets/image/icons/github.svg";
-import Telega from "../Common/Assets/image/icons/telegram.svg";
+import WhatsApp from "../../Assets/image/icons/whatsapp.svg";
+import In from "../../Assets/image/icons/in.svg";
+import Facebook from "../../Assets/image/icons/facebook.svg";
+import Telegram from "../../Assets/image/icons/telegram.svg";
+import Title from "../Title/Title";
+import Button from "../Button/Button";
 
 
 const Contacts = () => {
@@ -24,10 +25,10 @@ const Contacts = () => {
                         <input className={s.Input}/>
                         <input className={s.Input}/>
                         <textarea className={s.Textarea}/>
-                        <button className={s.Button}>Send</button>
+                        <Button/>
                     </form>
                     <address className={s.AddressBlock}>
-                        <h3 className={s.AddressTitle}>Info:</h3>
+                        <h3 className={s.Info}>Contact me:</h3>
                         <h3 className={s.AddressTitle}>e-mail: <a
                             href={"mailto:ek.mlg@yandex.ru"}
                             className={s.AddressSpan}
@@ -49,11 +50,11 @@ const Contacts = () => {
                             <a href={"https://www.linkedin.com/in/ek-mlg"} target={"_blank"} rel={"noreferrer"}>
                                 <Icons src={In} alt={"Linkedin"}/>
                             </a>
-                            <a href={"https://github.com/ek-mlg"} target={"_blank"} rel={"noreferrer"}>
-                                <Icons src={Git} alt={"GitHub"}/>
+                            <a href={"https://www.facebook.com/profile.php?id=100011402307623"} target={"_blank"} rel={"noreferrer"}>
+                                <Icons src={Facebook} alt={"Facebook"}/>
                             </a>
                             <a href={"https://t.me/break_the_rules_eat_grasses"} target={"_blank"} rel={"noreferrer"}>
-                                <Icons src={Telega} alt={"Telegram"}/>
+                                <Icons src={Telegram} alt={"Telegram"}/>
                             </a>
                         </div>
                     </address>

@@ -7,13 +7,12 @@
 
 .AboutContainer {
     box-sizing: border-box;
-    align-items: center;
-    margin-bottom: 200px;
+    align-items: flex-end;
 }
 
 .ImgContainer {
     width: 50%;
-    height: 450px;
+    height: 470px;
     background-color: aquamarine;
 }
 
@@ -55,12 +54,6 @@
     font-weight: 400;
 }
 
-.Button {
-    height: 40px;
-    width: 140px;
-    font-size: 16px;
-}
-
 @media (max-width: 1040px) {
     .ImgContainer {
         width: 100%;
@@ -80,8 +73,5 @@
         justify-content: center;
         height: 310px;
         width: 310px;
-    }
-    .AboutContainer {
-        margin-bottom: 140px;
     }
 }
