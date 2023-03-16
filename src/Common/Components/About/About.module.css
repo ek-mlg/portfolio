@@ -13,12 +13,14 @@
 .ImgContainer {
     width: 50%;
     height: 470px;
-    background-color: aquamarine;
 }
 
 .Img {
     height: 375px;
     width: 415px;
+    border-radius: 5px;
+    vertical-align: middle;
+    object-fit: cover;
 }
 
 .TextContainer {

@@ -1,6 +1,6 @@
 .MainBlock {
     height: 100vh;
-    background-color: #ffd4f0;
+    background-color: #000;
 }
 
 .Container {
@@ -9,11 +9,49 @@
 }
 
 .Text {
-    background-color: #f7f7f7;
     position: absolute;
     top: 40%;
     left: 20%;
     z-index: 1;
+}
+
+.Title {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.SecondTitle {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.Description {
+    color: #bbb;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    padding-top: 20px;
+    font-style: italic;
+    box-sizing: border-box;
+
 }
 
 .Photo {
@@ -31,5 +69,11 @@
     .Text {
         top: 75%;
         left: 10%;
+    }
+    .Title {
+        font-size: 60px;
+    }
+    .SecondTitle {
+        font-size: 60px;
     }
 }

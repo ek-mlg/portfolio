@@ -3,6 +3,7 @@ import s from './About.module.css';
 import sContainer from '../../Styles/Container.module.css';
 import Title from "../Title/Title";
 import Button from "../Button/Button";
+import p from '../../Assets/image/photos/ava.jpeg';
 
 const About = () => {
     return (
@@ -10,7 +11,7 @@ const About = () => {
             <div className={`${sContainer.Container} ${s.AboutContainer}`}>
 
                 <div className={s.ImgContainer}>
-                    <img className={s.Img} alt={"Img"}/>
+                    <img className={s.Img} alt={"Img"} src={p}/>
                 </div>
                 <div className={s.TextContainer}>
                     <Title title={"Egor Kirillov"} second={"About"}/>
