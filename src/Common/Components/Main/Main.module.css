@@ -3,11 +3,12 @@
     background-color: #000;
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 
 .Text {
     position: absolute;
-    top: 40%;
+    bottom: 40%;
     left: 20%;
     z-index: 1;
 }
@@ -60,6 +61,10 @@
 @media (max-width: 1040px) {
     .Photo {
         width: 100%;
+    }
+    .Text {
+        bottom: 20%;
+        left: 10%;
     }
     .Title {
         font-size: 60px;
