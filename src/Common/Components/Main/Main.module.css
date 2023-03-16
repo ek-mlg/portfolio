@@ -65,10 +65,7 @@
 @media (max-width: 1040px) {
     .Photo {
         width: 100%;
-    }
-    .Text {
-        top: 75%;
-        left: 10%;
+        height: 100%;
     }
     .Title {
         font-size: 60px;
