@@ -75,13 +75,13 @@
 
   .Photo {
     width: 65%;
-    background-color: aquamarine;
+    background-color: #ff500f;
   }
 
   @media (max-width: 1040px) {
     .Text {
       left: 10%;
-
+      bottom: 15%;
       .Title {
         font-size: 60px;
 
