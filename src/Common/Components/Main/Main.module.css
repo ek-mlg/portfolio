@@ -8,7 +8,7 @@
 
 .Text {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     left: 20%;
     z-index: 1;
 }
@@ -63,7 +63,6 @@
         width: 100%;
     }
     .Text {
-        bottom: 30%;
         left: 10%;
     }
     .Title {
