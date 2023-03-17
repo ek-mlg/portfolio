@@ -1,0 +1,102 @@
+@import "../../styles/variables.sass";
+@import "../../styles/mixins";
+
+.MainBlock {
+  min-height: 100vh;
+  background-color: $bgColor;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+  .Text {
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+    z-index: 1;
+
+    .Title {
+      margin: 0;
+      padding: 0;
+
+      @include text(
+                      transparent,
+                      "Poppins",
+                      normal,
+                      80px,
+                      900,
+                      1.1,
+                      0.5px
+      );
+
+      -webkit-text-stroke: 1px #fff;
+      text-transform: uppercase;
+      box-sizing: border-box;
+
+
+      .SecondTitle {
+        margin: 0;
+        padding: 0;
+
+        @include text(
+                        $textColor,
+                        "Poppins",
+                        normal,
+                        80px,
+                        900,
+                        1.1,
+                        0.5px
+        );
+
+        text-transform: uppercase;
+        box-sizing: border-box;
+
+      }
+    }
+
+    .Description {
+
+      padding-top: 20px;
+
+      @include text(
+                      $textColorSecond,
+                      "Poppins",
+                      italic,
+                      15px,
+                      600,
+                      30px,
+                      0.2px
+      );
+
+      display: inline-block;
+      box-sizing: border-box;
+
+    }
+  }
+
+  .Photo {
+    width: 65%;
+    background-color: aquamarine;
+  }
+
+  @media (max-width: 1040px) {
+    .Text {
+      left: 10%;
+
+      .Title {
+        font-size: 60px;
+
+        .SecondTitle {
+          font-size: 60px;
+        }
+      }
+    }
+    .Photo {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+

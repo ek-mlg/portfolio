@@ -1,0 +1,24 @@
+@import "../../styles/variables.sass";
+
+.WorksBlock {
+  min-height: auto;
+  background-color: $bgColorSecond;
+
+  .WorksContainer {
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .Works {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      align-items: flex-start;
+      padding-top: 105px;
+      @media (max-width: 1040px) {
+        gap: 50px;
+      }
+    }
+  }
+}

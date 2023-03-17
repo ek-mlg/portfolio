@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from "./Common/Components/Header/Header";
-import Main from "./Common/Components/Main/Main";
-import Skills from "./Common/Components/Skills/Skills";
-import Works from "./Common/Components/Works/Works";
-import Contacts from "./Common/Components/Contacts/Contacts";
-import Footer from "./Common/Components/Footer/Footer";
-import About from "./Common/Components/About/About";
+import Header from "./common/components/Header/Header";
+import Main from "./common/components/Main/Main";
+import Skills from "./common/components/Skills/Skills";
+import Works from "./common/components/Works/Works";
+import Contacts from "./common/components/Contacts/Contacts";
+import Footer from "./common/components/Footer/Footer";
+import About from "./common/components/About/About";
 
 function App() {
     return (

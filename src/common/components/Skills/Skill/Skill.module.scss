@@ -1,0 +1,47 @@
+@import "../../../styles/variables.sass";
+@import "../../../styles/mixins";
+
+.Skill {
+  min-height: 130px;
+  width: 310px;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  gap: 25px;
+  cursor: e-resize;
+  .Text {
+    flex-direction: column;
+    width: 225px;
+    .Title {
+      margin: 0 0 15px;
+
+      @include text(
+                      $textColor,
+                      "Poppins",
+                      normal,
+                      18px,
+                      600,
+                      1.4,
+                      0.2px
+      );
+
+      cursor: e-resize;
+    }
+    .Description {
+
+      @include text(
+                      $textColorSecond,
+                      "Mulish",
+                      italic,
+                      15px,
+                      600,
+                      30px,
+                      0.2px
+      );
+    }
+  }
+}
+
+
+
+

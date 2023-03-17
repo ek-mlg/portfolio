@@ -1,0 +1,26 @@
+@import "../../styles/variables.sass";
+@import "../../styles/mixins";
+
+.Nav {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .Current {
+
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    @include text(
+                    $textColor,
+                    "Poppins",
+                    normal,
+                    15px,
+                    600,
+                    1,
+                    0.2px
+    );
+  }
+}

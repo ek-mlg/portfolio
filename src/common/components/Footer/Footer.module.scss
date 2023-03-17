@@ -1,0 +1,86 @@
+@import "../../styles/variables.sass";
+@import "../../styles/mixins";
+
+.Footer {
+  min-height: 240px;
+  background-color: $bgColorSecond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  .FooterWrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+    .Container {
+      border: 1px solid gray;
+      width: 280px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .TextContainer {
+      display: flex;
+      flex-direction: column;
+
+      .Title {
+        @include text(
+                        $textColor,
+                        "Poppins",
+                        normal,
+                        15px,
+                        500,
+                        30px,
+                        0.2px
+        );
+      }
+
+      .Info {
+        @include text(
+                        $textColor,
+                        "Poppins",
+                        normal,
+                        15px,
+                        500,
+                        30px,
+                        0.2px
+        );
+        text-decoration: none;
+      }
+
+      .Copyright {
+        @include text(
+                        $textColor,
+                        "Poppins",
+                        normal,
+                        15px,
+                        500,
+                        30px,
+                        0.2px
+        );
+      }
+    }
+  }
+
+  @media (max-width: 1040px) {
+    padding: 50px 0 50px 0;
+
+    .FooterWrapper {
+      gap: 25px;
+
+      .Container {
+        width: 100%;
+      }
+
+      .TextContainer {
+        width: 200px;
+      }
+    }
+  }
+}

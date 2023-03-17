@@ -1,0 +1,91 @@
+@import "../../styles/variables.sass";
+@import "../../styles/mixins";
+
+.AboutBlock {
+  min-height: auto;
+  background-color: $bgColorSecond;
+  display: flex;
+  align-items: center;
+
+  .AboutContainer {
+    box-sizing: border-box;
+    align-items: flex-end;
+
+    .ImgContainer {
+      width: 50%;
+      height: 470px;
+
+      .Img {
+        height: 375px;
+        width: 415px;
+        border-radius: 5px;
+        vertical-align: middle;
+        object-fit: cover;
+      }
+    }
+
+    .TextContainer {
+      width: 50%;
+      height: auto;
+
+      .SpanAbout {
+        padding-top: 10px;
+        padding-bottom: 35px;
+        @include text(
+                        $textColorSecond,
+                        "Poppins",
+                        italic,
+                        15px,
+                        600,
+                        30px,
+                        0.2px
+        );
+
+        display: inline-block;
+
+      }
+
+      .Text {
+        padding-top: 32px;
+        margin-bottom: 40px;
+        width: 545px;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+
+        @include text(
+                        $textColorSecond,
+                        "Mulish",
+                        italic,
+                        15px,
+                        400,
+                        30px,
+                        0.2px
+        );
+      }
+    }
+
+    @media (max-width: 1040px) {
+      .ImgContainer {
+        width: 100%;
+        height: 360px;
+
+        .Img {
+          display: flex;
+          justify-content: center;
+          height: 310px;
+          width: 310px;
+        }
+      }
+      .TextContainer {
+        width: 100%;
+
+        .SpanAbout {
+          padding-top: 50px;
+        }
+
+        .Text {
+          width: 310px;
+        }
+      }
+    }
+  }
+}

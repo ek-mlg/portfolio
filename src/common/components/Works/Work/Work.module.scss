@@ -1,0 +1,50 @@
+@import "../../../styles/variables.sass";
+@import "../../../styles/mixins";
+
+.Work {
+  width: 355px;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: flex-start;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
+
+  .ImgContainer {
+    height: 275px;
+    width: 100%;
+    background-color: #eeeef5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .WorkTitle {
+    margin: 10% 7% 7% 10%;
+
+    @include text(
+                    $textColor,
+                    "Poppins",
+                    normal,
+                    18px,
+                    600,
+                    1.4,
+                    0.2px
+    )
+  }
+
+  .WorkDescription {
+    margin: 0 10% 7% 10%;
+
+    @include text(
+                    $textColorSecond,
+                    "Poppins",
+                    italic,
+                    15px,
+                    400,
+                    1.8,
+                    0.2px
+    );
+  }
+}
+
