@@ -9,6 +9,8 @@
   align-items: center;
   gap: 30px;
 
+  box-sizing: $box-sizing;
+
   .FooterWrapper {
     width: 80%;
     display: flex;
@@ -16,18 +18,23 @@
     align-items: center;
     flex-wrap: wrap-reverse;
 
-    .Container {
-      border: 1px solid gray;
+    box-sizing: $box-sizing;
+
+    .IconsContainer {
       width: 280px;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+
+      box-sizing: $box-sizing;
     }
 
     .TextContainer {
       display: flex;
       flex-direction: column;
+
+      box-sizing: $box-sizing;
 
       .Title {
         @include text(
@@ -39,6 +46,9 @@
                         30px,
                         0.2px
         );
+
+        box-sizing: $box-sizing;
+
       }
 
       .Info {
@@ -51,7 +61,10 @@
                         30px,
                         0.2px
         );
+
         text-decoration: none;
+
+        box-sizing: $box-sizing;
       }
 
       .Copyright {

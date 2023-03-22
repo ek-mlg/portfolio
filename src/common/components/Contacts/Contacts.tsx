@@ -14,7 +14,7 @@ const Contacts = () => {
     return (
         <div className={s.ContactsBlock}>
             <div className={`${sContainer.Container} ${s.ContactsContainer}`}>
-                <Title title={"Contacts"} second={"second"}/>
+                <Title title={"Get un touch"} second={"Contact"}/>
                 <div className={s.Contacts}>
                     <form className={s.Form}>
                         <p className={s.Text}>
@@ -25,39 +25,8 @@ const Contacts = () => {
                         <input className={s.Input}/>
                         <input className={s.Input}/>
                         <textarea className={s.Textarea}/>
-                        <Button/>
+                        <Button text={"Send"}/>
                     </form>
-                    <address className={s.AddressBlock}>
-                        <h3 className={s.Info}>Contact me:</h3>
-                        <h3 className={s.AddressTitle}>e-mail: <a
-                            href={"mailto:ek.mlg@yandex.ru"}
-                            className={s.AddressSpan}
-                        >
-                            ek.mlg@yandex.ru
-                        </a>
-                        </h3>
-                        <h3 className={s.AddressTitle}>telephone: <a
-                            href={"tel:+7 (919) 016-17-63"}
-                            className={s.AddressSpan}
-                        >
-                            +7 (919) 016-17-63
-                        </a>
-                        </h3>
-                        <div className={s.Icons}>
-                            <a href={"https://wa.me/89190161763"} target={"_blank"} rel={"noreferrer"}>
-                                <Icons src={WhatsApp} alt={"WhatsApp"}/>
-                            </a>
-                            <a href={"https://www.linkedin.com/in/ek-mlg"} target={"_blank"} rel={"noreferrer"}>
-                                <Icons src={In} alt={"Linkedin"}/>
-                            </a>
-                            <a href={"https://www.facebook.com/profile.php?id=100011402307623"} target={"_blank"} rel={"noreferrer"}>
-                                <Icons src={Facebook} alt={"Facebook"}/>
-                            </a>
-                            <a href={"https://t.me/break_the_rules_eat_grasses"} target={"_blank"} rel={"noreferrer"}>
-                                <Icons src={Telegram} alt={"Telegram"}/>
-                            </a>
-                        </div>
-                    </address>
                 </div>
             </div>
         </div>

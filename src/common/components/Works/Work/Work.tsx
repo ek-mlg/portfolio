@@ -11,7 +11,7 @@ const Work:React.FC<WorkPropsType> = ({workTitle, workDescription}) => {
     return (
         <div className={s.Work}>
             <div className={s.ImgContainer}>
-                <Button/>
+                <Button text={"Look"}/>
             </div>
             <h3 className={s.WorkTitle}>{workTitle}</h3>
             <span className={s.WorkDescription}>{workDescription}</span>

@@ -1,25 +1,26 @@
+@import "../../styles/variables.sass";
+@import "../../styles/mixins";
+
 .Button {
   height: 60px;
   width: 160px;
-  font-family: "Mulish", sans-serif;
-  font-size: 15px;
-  line-height: 57px;
-  font-weight: 400;
+
+  @include text(
+                  #000,
+                  "Mulish",
+                  italic,
+                  15px,
+                  400,
+                  57px,
+                  .8px
+  );
 
   border: 2px solid #fff;
   background-color: #fff;
-  color: #000;
-  box-sizing: border-box;
-  font-style: italic;
   cursor: pointer;
-
-
-  letter-spacing: .8px;
-  display: inline-block;
   overflow: hidden;
-  text-decoration: none;
-
   border-radius: 30px;
+  box-sizing: $box-sizing;
 
   &:hover {
     background-color: #000;

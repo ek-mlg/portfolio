@@ -5,26 +5,34 @@
   min-height: auto;
   background-color: $bgColor;
 
+  box-sizing: $box-sizing;
+
   .ContactsContainer {
     justify-content: flex-start;
     flex-direction: column;
+
+    box-sizing: $box-sizing;
 
     .Contacts {
       padding-top: 105px;
       width: 100%;
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
-      box-sizing: border-box;
+
+      box-sizing: $box-sizing;
 
       .Form {
-        width: 470px;
+        width: 570px;
         gap: 20px;
         display: flex;
         flex-direction: column;
 
+        box-sizing: $box-sizing;
+
         .Text {
           padding-bottom: 20px;
+
+          box-sizing: $box-sizing;
 
           @include text(
                           $textColorSecond,
@@ -49,9 +57,10 @@
           line-height: 1.6;
           height: 44px;
           vertical-align: middle;
-          box-sizing: border-box;
           padding: 10px;
           border-radius: 5px;
+
+          box-sizing: $box-sizing;
         }
 
         .Textarea {
@@ -67,61 +76,10 @@
           font-family: "Poppins", serif;
           letter-spacing: 0.2px;
           line-height: 1.4;
-          box-sizing: border-box;
           padding: 10px;
           border-radius: 5px;
-        }
-      }
 
-      .AddressBlock {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .Info {
-          @include text(
-                          $textColor,
-                          "Poppins",
-                          normal,
-                          18px,
-                          600,
-                          1.4,
-                          0.2px
-          );
-        }
-
-        .AddressTitle {
-          margin: 0 0 25px 0;
-
-          @include text(
-                          $textColorSecond,
-                          "Poppins",
-                          italic,
-                          15px,
-                          400,
-                          1.8,
-                          0.2px
-          );
-          .AddressSpan {
-            color: $textColorSecond;
-            text-decoration: none;
-          }
-        }
-
-        .Icons {
-          display: flex;
-          gap: 20px;
-          margin-top: 20px;
-        }
-      }
-
-      @media (max-width: 1040px) {
-        gap: 50px;
-        .AddressBlock {
-          width: 100%;
-        }
-        .Icons {
-          justify-content: space-between;
+          box-sizing: $box-sizing;
         }
       }
     }

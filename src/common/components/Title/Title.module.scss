@@ -19,6 +19,8 @@
   text-transform: uppercase;
   cursor: default;
 
+  box-sizing: $box-sizing;
+
   .SecondTitle {
     position: absolute;
     left: -6px;
@@ -37,6 +39,8 @@
     );
 
     text-transform: uppercase;
+
+    box-sizing: $box-sizing;
   }
 
   @media (max-width: 1040px) {

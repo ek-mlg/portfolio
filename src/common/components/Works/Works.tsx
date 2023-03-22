@@ -10,9 +10,9 @@ const Works = () => {
             <div className={`${sContainer.Container} ${s.WorksContainer}`}>
                 <Title title={"Featured Works"} second={"Portfolio"}/>
                 <div className={s.Works}>
-                    <Work workTitle={'Work title 1'} workDescription={"Work description 1 Work description 1 Work description 1 Work description 1 Work description 1 Work description 1 Work description 1 Work description 1"}/>
-                    <Work workTitle={'Work title 2'} workDescription={"Work description 2"}/>
-                    <Work workTitle={'Work title 3'} workDescription={"Work description 3"}/>
+                    <Work workTitle={'TodoList'} workDescription={"Work description 1 Work description 1 Work description 1 Work description 1 Work description 1 Work description 1 Work description 1 Work description 1"}/>
+                    <Work workTitle={'Social network'} workDescription={"The React course - Way of the Samurai, this project helped me understand what a successful SPA is built on, comprehended the work of flux, react-store, used many libraries, including: redux, redux-thunk, axios, React router DOM."}/>
+                    <Work workTitle={'Counter'} workDescription={"My first project on React, here used controlled components to create an intuitive user interface, also the property of storing data in localStorage, conditional rendering."}/>
                 </div>
             </div>
         </div>

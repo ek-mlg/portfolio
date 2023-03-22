@@ -7,10 +7,11 @@
   align-items: center;
   justify-content: space-between;
 
+  box-sizing: $box-sizing;
+
   .Current {
 
     text-decoration: none;
-    box-sizing: border-box;
     cursor: pointer;
 
     @include text(
@@ -22,5 +23,7 @@
                     1,
                     0.2px
     );
+
+    box-sizing: $box-sizing;
   }
 }

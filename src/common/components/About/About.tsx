@@ -18,7 +18,8 @@ const About = () => {
                     <span className={s.SpanAbout}>Frontend Developer | React</span>
 
                     <div className={s.Text}>
-                        <p>I'm considering office or remote work options.
+                        <p>
+                            I'm considering office or remote work options.
                             My name is Bernard Sydney. I am a Web Developer, and I'm very passionate and dedicated to my
                             work.
                         </p>
@@ -29,7 +30,7 @@ const About = () => {
                             from discussion and collaboration.
                         </p>
                     </div>
-                    <Button/>
+                    <Button text={"Download CV"}/>
                 </div>
             </div>
         </div>

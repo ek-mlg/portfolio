@@ -7,13 +7,18 @@
   display: flex;
   align-items: center;
 
+  box-sizing: $box-sizing;
+
   .AboutContainer {
-    box-sizing: border-box;
     align-items: flex-end;
+
+    box-sizing: $box-sizing;
 
     .ImgContainer {
       width: 50%;
       height: 470px;
+
+      box-sizing: $box-sizing;
 
       .Img {
         height: 375px;
@@ -21,12 +26,16 @@
         border-radius: 5px;
         vertical-align: middle;
         object-fit: cover;
+
+        box-sizing: $box-sizing;
       }
     }
 
     .TextContainer {
       width: 50%;
       height: auto;
+
+      box-sizing: $box-sizing;
 
       .SpanAbout {
         padding-top: 10px;
@@ -42,6 +51,7 @@
         );
 
         display: inline-block;
+        box-sizing: $box-sizing;
 
       }
 
@@ -60,6 +70,9 @@
                         30px,
                         0.2px
         );
+
+        box-sizing: $box-sizing;
+
       }
     }
 

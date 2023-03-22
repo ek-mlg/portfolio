@@ -2,6 +2,7 @@
 @import "../../../styles/mixins";
 
 .Work {
+  border-radius: 5px;
   width: 355px;
   background-color: $bgColor;
   display: flex;
@@ -10,13 +11,18 @@
   align-items: flex-start;
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
 
+  box-sizing: $box-sizing;
+
   .ImgContainer {
+    border-radius: 5px 5px 0 0;
     height: 275px;
     width: 100%;
     background-color: #eeeef5;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    box-sizing: $box-sizing;
   }
 
   .WorkTitle {
@@ -30,7 +36,9 @@
                     600,
                     1.4,
                     0.2px
-    )
+    );
+
+    box-sizing: $box-sizing;
   }
 
   .WorkDescription {
@@ -45,6 +53,8 @@
                     1.8,
                     0.2px
     );
+
+    box-sizing: $box-sizing;
   }
 }
 

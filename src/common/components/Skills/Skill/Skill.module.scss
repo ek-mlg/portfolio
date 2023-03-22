@@ -6,12 +6,15 @@
   width: 310px;
   display: flex;
   align-items: flex-start;
-  box-sizing: border-box;
   gap: 25px;
   cursor: e-resize;
+
+  box-sizing: $box-sizing;
   .Text {
     flex-direction: column;
     width: 225px;
+
+    box-sizing: $box-sizing;
     .Title {
       margin: 0 0 15px;
 
@@ -26,6 +29,8 @@
       );
 
       cursor: e-resize;
+
+      box-sizing: $box-sizing;
     }
     .Description {
 
@@ -38,6 +43,8 @@
                       30px,
                       0.2px
       );
+
+      box-sizing: $box-sizing;
     }
   }
 }

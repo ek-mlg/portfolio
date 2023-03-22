@@ -14,7 +14,7 @@ const Skills = () => {
                 <Title title={"Skills &"} second={"Abilities"}/>
                 <div className={s.Skills}>
                     <Skill title={'TypeScript'} description={'test description1'} src={TS} alt={"TS"}/>
-                    <Skill title={'Redux'} description={'test description2'} src={Redux} alt={"Redux"}/>
+                    <Skill title={'Redux'} description={'Experience with the Redux library, I understand its fundamental concepts: including state, actions, reducers and storage.'} src={Redux} alt={"Redux"}/>
                     <Skill title={'React'} description={'Modern and mobile-ready website that will help you reach all of your marketing.'} src={ReactSVG} alt={"React"}/>
 
                     {/*<Skill title={'CSS'} description={'test description1'} src={TS}/>

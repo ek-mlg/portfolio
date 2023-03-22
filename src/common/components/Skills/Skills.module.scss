@@ -3,16 +3,23 @@
 .SkillsBlock {
     min-height: auto;
     background-color: $bgColor;
+
+    box-sizing: $box-sizing;
+
     .SkillsContainer {
         justify-content: flex-start;
         flex-direction: column;
+
+        box-sizing: $box-sizing;
+
         .Skills {
             padding-top: 105px;
             width: 100%;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            box-sizing: border-box;
+
+            box-sizing: $box-sizing;
         }
     }
 }

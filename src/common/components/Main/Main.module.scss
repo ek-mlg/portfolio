@@ -8,11 +8,15 @@
   justify-content: flex-end;
   position: relative;
 
+  box-sizing: $box-sizing;
+
   .Text {
     position: absolute;
     bottom: 30%;
     left: 20%;
     z-index: 1;
+
+    box-sizing: $box-sizing;
 
     .Title {
       margin: 0;
@@ -30,8 +34,8 @@
 
       -webkit-text-stroke: 1px #fff;
       text-transform: uppercase;
-      box-sizing: border-box;
 
+      box-sizing: $box-sizing;
 
       .SecondTitle {
         margin: 0;
@@ -48,7 +52,8 @@
         );
 
         text-transform: uppercase;
-        box-sizing: border-box;
+
+        box-sizing: $box-sizing;
 
       }
     }
@@ -68,7 +73,8 @@
       );
 
       display: inline-block;
-      box-sizing: border-box;
+
+      box-sizing: $box-sizing;
 
     }
   }
@@ -76,6 +82,8 @@
   .Photo {
     width: 65%;
     background-color: #ff500f;
+
+    box-sizing: $box-sizing;
   }
 
   @media (max-width: 1040px) {

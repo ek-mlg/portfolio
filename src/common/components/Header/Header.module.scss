@@ -14,12 +14,16 @@
   z-index: 2;
   transition: background-color 0.3s ease-in-out;
 
+  box-sizing: $box-sizing;
+
   .HeaderContainer {
     height: 100%;
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    box-sizing: $box-sizing;
 
     .Logo {
       margin: 0;
@@ -36,6 +40,8 @@
       );
 
       cursor: default;
+
+      box-sizing: $box-sizing;
     }
   }
 }
