@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss';
+import mainPhoto from '../../assets/image/photos/mainPhoto.jpg'
 
 
 const Main = () => {
@@ -12,7 +13,7 @@ const Main = () => {
                 </h1>
                 <span className={s.Description}>Frontend Developer | React, Redux</span>
             </div>
-            <div className={s.Photo}></div>
+            <img className={s.Photo} alt={"Main Photo"} src={mainPhoto}/>
         </div>
     );
 };

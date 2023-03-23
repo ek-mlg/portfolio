@@ -6,7 +6,7 @@
   width: 160px;
 
   @include text(
-                  #000,
+                  $bgColor,
                   "Mulish",
                   italic,
                   15px,
@@ -15,15 +15,18 @@
                   .8px
   );
 
-  border: 2px solid #fff;
+  border: 2px solid $bgColor;
   background-color: #fff;
   cursor: pointer;
   overflow: hidden;
   border-radius: 30px;
   box-sizing: $box-sizing;
 
+  position: relative;
+
   &:hover {
-    background-color: #000;
+    border: 2px solid #fff;
+    background-color: $bgColor;
     color: #fff;
   }
 }

@@ -1,11 +1,6 @@
 import React from 'react';
 import s from './Contacts.module.scss';
 import sContainer from '../../styles/Container.module.scss';
-import Icons from "../Icons/Icons";
-import WhatsApp from "../../assets/image/icons/whatsapp.svg";
-import In from "../../assets/image/icons/in.svg";
-import Facebook from "../../assets/image/icons/facebook.svg";
-import Telegram from "../../assets/image/icons/telegram.svg";
 import Title from "../Title/Title";
 import Button from "../Button/Button";
 

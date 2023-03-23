@@ -5,12 +5,13 @@ import Button from "../../Button/Button";
 type WorkPropsType = {
     workTitle: string
     workDescription: string
+    style: any
 }
 
-const Work:React.FC<WorkPropsType> = ({workTitle, workDescription}) => {
+const Work:React.FC<WorkPropsType> = ({workTitle, workDescription, style}) => {
     return (
         <div className={s.Work}>
-            <div className={s.ImgContainer}>
+            <div className={s.ImgContainer} style={style}>
                 <Button text={"Look"}/>
             </div>
             <h3 className={s.WorkTitle}>{workTitle}</h3>
