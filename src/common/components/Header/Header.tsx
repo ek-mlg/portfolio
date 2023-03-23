@@ -15,8 +15,6 @@ const Header = () => {
         return () => window.removeEventListener('scroll', onScroll)
     }, [])
 
-    console.log(scroll)
-
     return (
         <header className={`${s.Header} ${scroll ? s.Scroll : ''}`}>
             <div className={s.HeaderContainer}>

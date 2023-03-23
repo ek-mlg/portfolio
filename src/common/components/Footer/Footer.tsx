@@ -12,25 +12,21 @@ const Footer = () => {
     const date = new Date()
     const yearDate = date.getFullYear()
 
+    const iconsState = [
+        {href: "https://t.me/break_the_rules_eat_grasses", target: "_blank", rel: "noreferrer", src: Telegram, alt: "Telegram"},
+        {href: "https://wa.me/89190161763", target: "_blank", rel: "noreferrer", src: WhatsApp, alt: "WhatsApp"},
+        {href: "https://www.facebook.com/profile.php?id=100011402307623", target: "_blank", rel: "noreferrer", src: Facebook, alt: "Facebook"},
+        {href: "https://www.linkedin.com/in/ek-mlg", target: "_blank", rel: "noreferrer", src: In, alt: "Linkedin"},
+        {href: "https://github.com/ek-mlg", target: "_blank", rel: "noreferrer", src: GitHub, alt: "GitHub"}
+    ]
+
     return (
         <div className={s.Footer}>
             <address className={s.FooterWrapper}>
                 <div className={s.IconsContainer}>
-                    <a href={"https://t.me/break_the_rules_eat_grasses"} target={"_blank"} rel={"noreferrer"}>
-                        <Icons src={Telegram} alt={"Telegram"}/>
-                    </a>
-                    <a href={"https://wa.me/89190161763"} target={"_blank"} rel={"noreferrer"}>
-                        <Icons src={WhatsApp} alt={"WhatsApp"}/>
-                    </a>
-                    <a href={"https://www.facebook.com/profile.php?id=100011402307623"} target={"_blank"} rel={"noreferrer"}>
-                        <Icons src={Facebook} alt={"Facebook"}/>
-                    </a>
-                    <a href={"https://www.linkedin.com/in/ek-mlg"} target={"_blank"} rel={"noreferrer"}>
-                        <Icons src={In} alt={"Linkedin"}/>
-                    </a>
-                    <a href={"https://github.com/ek-mlg"} target={"_blank"} rel={"noreferrer"}>
-                        <Icons src={GitHub} alt={"GitHub"}/>
-                    </a>
+                    {iconsState.map((el, index) => <a key={index} href={el.href} target={el.target} rel={el.rel}>
+                        <Icons src={el.src} alt={el.alt}/>
+                        </a>)}
                 </div>
                 <div className={s.TextContainer}>
                     <span className={s.Title}>Egor Kirillov</span>

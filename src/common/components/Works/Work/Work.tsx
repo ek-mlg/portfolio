@@ -5,7 +5,11 @@ import Button from "../../Button/Button";
 type WorkPropsType = {
     workTitle: string
     workDescription: string
-    style: any
+    style: backgroundImageType
+}
+
+type backgroundImageType = {
+    backgroundImage: string;
 }
 
 const Work:React.FC<WorkPropsType> = ({workTitle, workDescription, style}) => {
