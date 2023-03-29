@@ -7,7 +7,7 @@ import {Fade, Slide, Zoom} from "react-awesome-reveal";
 
 const Contacts = () => {
     return (
-        <div className={s.ContactsBlock}>
+        <div className={s.ContactsBlock} id="contacts">
             <div className={s.ContactsContainer}>
                 <Fade direction={"down"} triggerOnce={true}>
                     <Title title={"Get un touch"} second={"Contact"}/>

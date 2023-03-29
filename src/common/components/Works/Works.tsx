@@ -41,7 +41,7 @@ const Works = () => {
     ]
 
     return (
-        <div className={s.WorksBlock}>
+        <div className={s.WorksBlock} id="works">
             <div className={s.WorksContainer}>
                 <Fade direction={"down"} triggerOnce={true}>
                     <Title title={"Featured Works"} second={"Portfolio"}/>

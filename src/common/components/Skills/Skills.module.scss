@@ -4,8 +4,6 @@
 
 .SkillsBlock {
     min-height: auto;
-    background-color: $bgColor;
-
     box-sizing: $box-sizing;
 
     .SkillsContainer {
@@ -22,6 +20,7 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            gap: 50px;
 
             box-sizing: $box-sizing;
         }

@@ -7,7 +7,7 @@ import {Bounce, Fade, Slide} from "react-awesome-reveal";
 
 const About = () => {
     return (
-        <div className={s.AboutBlock}>
+        <div className={s.AboutBlock} id="about">
             <div className={s.AboutContainer}>
                 <div className={s.ImgContainer}>
                     <Fade duration={3000} triggerOnce={true}>

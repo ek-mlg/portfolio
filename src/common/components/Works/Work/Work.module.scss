@@ -72,5 +72,8 @@
 
     box-sizing: $box-sizing;
   }
+  @media (max-width: 1040px) {
+    width: 100%;
+  }
 }
 

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import s from './Nav.module.scss';
-
+import {Link} from "react-scroll";
 
 
 const Nav = () => {
@@ -28,15 +28,71 @@ const Nav = () => {
             {size > 1040
                 ?
                 <div className={s.Nav}>
-                    <a href="src/common/components/Nav" className={s.Current}>Home</a>
-                    <a href="src/common/components/Nav" className={s.Current}>Skills</a>
-                    <a href="src/common/components/Nav" className={s.Current}>Works</a>
-                    <a href="src/common/components/Nav" className={s.Current}>Contacts</a>
+                    <Link
+                        className={s.Current}
+                        activeClass={s.Active}
+                        to="main"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={-90}
+                        duration={500}
+                    >
+                        Home
+                    </Link>
+                    <Link
+                        className={s.Current}
+                        activeClass={s.Active}
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={-90}
+                        duration={500}
+                    >
+                        About
+                    </Link>
+                    <Link
+                        className={s.Current}
+                        activeClass={s.Active}
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={-90}
+                        duration={500}
+                    >
+                        Skills
+                    </Link>
+                    <Link
+                        className={s.Current}
+                        activeClass={s.Active}
+                        to="works"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={-90}
+                        duration={500}
+                    >
+                        Works
+                    </Link>
+                    <Link
+                        className={s.Current}
+                        activeClass={s.Active}
+                        to="contacts"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        Contacts
+                    </Link>
                 </div>
                 :
                 <h4 style={{
                     color: "white",
-                    }}>МЕНЮ</h4>
+                }}>МЕНЮ</h4>
             }
         </>
 

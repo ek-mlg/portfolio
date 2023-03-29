@@ -3,7 +3,6 @@
 
 .MainBlock {
   height: 100vh;
-  background-color: $bgColor;
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -66,7 +65,7 @@
                       $textColorSecond,
                       $textSecond,
                       italic,
-                      15px,
+                      20px,
                       600,
                       30px,
                       0.2px

@@ -9,7 +9,7 @@ import {Fade, Zoom} from "react-awesome-reveal";
 
 const Skills = () => {
     return (
-        <div className={s.SkillsBlock}>
+        <div className={s.SkillsBlock} id="skills">
             <div className={s.SkillsContainer}>
                 <Fade direction={"down"} triggerOnce={true}>
                     <Title title={"Skills &"} second={"Abilities"}/>
