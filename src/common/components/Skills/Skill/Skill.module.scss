@@ -1,5 +1,5 @@
-@import "../../../styles/variables.sass";
-@import "../../../styles/mixins";
+@import "../../../assets/styles/variables.sass";
+@import "../../../assets/styles/mixins";
 
 .Skill {
   min-height: 130px;
@@ -20,7 +20,7 @@
 
       @include text(
                       $textColor,
-                      "Poppins",
+                      $textSecond,
                       normal,
                       18px,
                       600,
@@ -36,7 +36,7 @@
 
       @include text(
                       $textColorSecond,
-                      "Mulish",
+                      $text,
                       italic,
                       15px,
                       600,

@@ -9,6 +9,7 @@ import Footer from "./common/components/Footer/Footer";
 import About from "./common/components/About/About";
 
 function App() {
+
     return (
         <div className="App">
             <Header />

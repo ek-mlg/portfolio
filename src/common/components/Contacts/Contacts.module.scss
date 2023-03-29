@@ -1,5 +1,6 @@
-@import "../../styles/variables.sass";
-@import "../../styles/mixins";
+@import "../../assets/styles/variables.sass";
+@import "../../assets/styles/mixins";
+@import "../Button/Button.module";
 
 .ContactsBlock {
   min-height: auto;
@@ -12,6 +13,8 @@
     flex-direction: column;
 
     box-sizing: $box-sizing;
+
+    @include container();
 
     .Contacts {
       padding-top: 105px;
@@ -36,31 +39,13 @@
 
           @include text(
                           $textColorSecond,
-                          "Mulish",
+                          $text,
                           italic,
                           15px,
                           400,
                           30px,
                           0.2px
           );
-        }
-
-        .Input {
-          border: 1px solid rgba(255, 255, 255, .3);
-          color: #fff;
-          background-color: transparent;
-          font-style: italic;
-          width: 100%;
-          font-size: 13px;
-          letter-spacing: 0.2px;
-          font-family: "Poppins", serif;
-          line-height: 1.6;
-          height: 44px;
-          vertical-align: middle;
-          padding: 10px;
-          border-radius: 5px;
-
-          box-sizing: $box-sizing;
         }
 
         .Textarea {
@@ -73,13 +58,17 @@
           border: 1px solid rgba(255, 255, 255, .3);
           color: #fff;
           font-size: 13px;
-          font-family: "Poppins", serif;
+          font-family: $textSecond;
           letter-spacing: 0.2px;
           line-height: 1.4;
           padding: 10px;
           border-radius: 5px;
 
           box-sizing: $box-sizing;
+
+        }
+        Button[type="submit"] {
+          @extend .Btn;
         }
       }
     }

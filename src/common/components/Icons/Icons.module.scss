@@ -1,0 +1,18 @@
+.Icons {
+  height: 40px;
+  border-radius: 30px;
+
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.29);
+    animation: bounce 0.6s 2;
+    height: 45px;
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+  }
+}

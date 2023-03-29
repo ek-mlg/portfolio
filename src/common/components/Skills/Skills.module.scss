@@ -1,4 +1,6 @@
-@import "../../styles/variables.sass";
+@import "../../assets/styles/variables.sass";
+@import "../../assets/styles/mixins";
+
 
 .SkillsBlock {
     min-height: auto;
@@ -11,6 +13,8 @@
         flex-direction: column;
 
         box-sizing: $box-sizing;
+
+        @include container();
 
         .Skills {
             padding-top: 105px;

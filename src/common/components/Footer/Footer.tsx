@@ -1,11 +1,11 @@
 import React from 'react';
 import s from './Footer.module.scss';
 import Icons from "../Icons/Icons";
-import WhatsApp from "../../assets/image/icons/whatsapp.svg";
-import In from "../../assets/image/icons/in.svg";
-import Facebook from "../../assets/image/icons/facebook.svg";
-import Telegram from "../../assets/image/icons/telegram.svg";
-import GitHub from "../../assets/image/icons/github.svg";
+import WhatsApp from "../../assets/images/icons/whatsapp.svg";
+import In from "../../assets/images/icons/in.svg";
+import Facebook from "../../assets/images/icons/facebook.svg";
+import Telegram from "../../assets/images/icons/telegram.svg";
+import GitHub from "../../assets/images/icons/github.svg";
 
 const Footer = () => {
 
