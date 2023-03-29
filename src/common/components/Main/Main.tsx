@@ -8,14 +8,14 @@ const Main = () => {
     return (
         <div className={s.MainBlock}>
             <div className={s.Text}>
-                <Bounce triggerOnce={true}>
+                <Bounce triggerOnce={true} duration={1500}>
 
                     <h1 className={s.Title}>
                         Kirillov <br/>
                         <span className={s.SecondTitle}>Egor</span>
                     </h1>
                 </Bounce>
-                <Fade direction={"up"} triggerOnce={true}>
+                <Fade direction={"up"} triggerOnce={true} duration={1200}>
                     <span className={s.Description}>Frontend Developer | React, Redux</span>
 
                 </Fade>

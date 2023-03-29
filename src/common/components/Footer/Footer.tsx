@@ -6,6 +6,7 @@ import In from "../../assets/images/icons/in.svg";
 import Facebook from "../../assets/images/icons/facebook.svg";
 import Telegram from "../../assets/images/icons/telegram.svg";
 import GitHub from "../../assets/images/icons/github.svg";
+import {Fade} from "react-awesome-reveal";
 
 const Footer = () => {
 
@@ -23,6 +24,7 @@ const Footer = () => {
     return (
         <div className={s.Footer}>
             <address className={s.FooterWrapper}>
+                <Fade cascade={true} triggerOnce={true} direction={"down"}>
                 <div className={s.IconsContainer}>
                     {iconsState.map((el, index) => <a key={index} href={el.href} target={el.target} rel={el.rel}>
                         <Icons src={el.src} alt={el.alt}/>
@@ -39,6 +41,7 @@ const Footer = () => {
                 <div className={s.TextContainer}>
                     <span className={s.Copyright}>© {yearDate} All rights reserved</span>
                 </div>
+                </Fade>
             </address>
         </div>
     );

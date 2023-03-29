@@ -5,15 +5,15 @@ import Title from "../Title/Title";
 import TS from '../../assets/images/icons/ts.svg';
 import Redux from '../../assets/images/icons/redux.svg';
 import ReactSVG from '../../assets/images/icons/react.svg';
-import {Slide, Zoom} from "react-awesome-reveal";
+import {Fade, Zoom} from "react-awesome-reveal";
 
 const Skills = () => {
     return (
         <div className={s.SkillsBlock}>
             <div className={s.SkillsContainer}>
-                <Slide direction={"left"} triggerOnce={true}>
+                <Fade direction={"down"} triggerOnce={true}>
                     <Title title={"Skills &"} second={"Abilities"}/>
-                </Slide>
+                </Fade>
                 <div className={s.Skills}>
                     <Zoom cascade={true} triggerOnce={true} duration={800}>
                         <Skill title={'TypeScript'} description={'test description1'} src={TS} alt={"TS"}/>
