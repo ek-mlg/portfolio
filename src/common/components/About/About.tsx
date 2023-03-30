@@ -18,11 +18,12 @@ const About = () => {
                     <AttentionSeeker effect={"pulse"} triggerOnce={true}>
                         <Title title={"Egor Kirillov"} second={"About"}/>
                     </AttentionSeeker>
-                    <Bounce triggerOnce={true} fraction={1}>
+                    <Slide direction={"right"} cascade={true} damping={0.1} triggerOnce={true} duration={400}>
                         <span className={s.SpanAbout}>Frontend Developer | React</span>
-                    </Bounce>
+                    </Slide>
+                    <AttentionSeeker effect={"pulse"} cascade={true} triggerOnce={true} duration={1000}>
                     <div className={s.Text}>
-                        <Slide direction={"right"} cascade damping={0.1} triggerOnce={true} delay={-250}>
+
                             <p>
                                 I'm considering office or remote work options.
                                 My name is Bernard Sydney. I am a Web Developer, and I'm very passionate and dedicated
@@ -35,9 +36,9 @@ const About = () => {
                                 process,
                                 from discussion and collaboration.
                             </p>
-                        </Slide>
                     </div>
                         <Button text={"Download CV"} href={"href"}/>
+                </AttentionSeeker>
                 </div>
             </div>
         </div>

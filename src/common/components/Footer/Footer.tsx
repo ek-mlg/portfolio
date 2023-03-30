@@ -44,7 +44,7 @@ const Footer = () => {
                         </a>)}
                     </AttentionSeeker>
                 </div>
-                <Fade cascade={true} triggerOnce={true} direction={"down"} delay={-250}>
+                <Fade cascade={true} triggerOnce={true} direction={"down"}>
                     <div className={s.TextContainer}>
                         <span className={s.Title}>Egor Kirillov</span>
                         <span className={s.Title}>Frontend-developer</span>

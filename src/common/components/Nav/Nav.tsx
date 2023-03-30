@@ -35,7 +35,7 @@ const Nav = () => {
                         spy={true}
                         smooth={true}
                         hashSpy={true}
-                        offset={-90}
+                        offset={-100}
                         duration={500}
                     >
                         Home
@@ -47,7 +47,7 @@ const Nav = () => {
                         spy={true}
                         smooth={true}
                         hashSpy={true}
-                        offset={-90}
+                        offset={-100}
                         duration={500}
                     >
                         About
@@ -59,7 +59,7 @@ const Nav = () => {
                         spy={true}
                         smooth={true}
                         hashSpy={true}
-                        offset={-90}
+                        offset={-100}
                         duration={500}
                     >
                         Skills
@@ -71,7 +71,7 @@ const Nav = () => {
                         spy={true}
                         smooth={true}
                         hashSpy={true}
-                        offset={-90}
+                        offset={-100}
                         duration={500}
                     >
                         Works
@@ -83,7 +83,7 @@ const Nav = () => {
                         spy={true}
                         smooth={true}
                         hashSpy={true}
-                        offset={0}
+                        offset={-100}
                         duration={500}
                     >
                         Contacts

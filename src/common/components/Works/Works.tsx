@@ -5,7 +5,7 @@ import Title from "../Title/Title";
 import TodoImage from "../../assets/images/photos/todolist.jpg"
 import SocialImage from "../../assets/images/photos/socialnetwork.jpg"
 import CounterImage from "../../assets/images/photos/counter.jpg"
-import {AttentionSeeker, Fade, Slide, Zoom} from "react-awesome-reveal";
+import {AttentionSeeker, Slide} from "react-awesome-reveal";
 
 const Works = () => {
 
@@ -47,7 +47,7 @@ const Works = () => {
                     <Title title={"Featured Works"} second={"Portfolio"}/>
                 </AttentionSeeker>
                 <div className={s.Works}>
-                    <Fade cascade={true} triggerOnce={true} direction={"left"}>
+                    <Slide triggerOnce={true} direction={"right"} >
                         {works.map((el, index) =>
                             <Work
                                 key={index}
@@ -56,7 +56,7 @@ const Works = () => {
                                 style={el.style}
                                 href={el.href}
                             />)}
-                    </Fade>
+                    </Slide>
                 </div>
             </div>
         </div>
