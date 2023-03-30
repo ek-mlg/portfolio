@@ -43,11 +43,11 @@ const Works = () => {
     return (
         <div className={s.WorksBlock} id="works">
             <div className={s.WorksContainer}>
-                <Fade direction={"down"} triggerOnce={true}>
+                <Fade direction={"down"} triggerOnce={true} delay={-150}>
                     <Title title={"Featured Works"} second={"Portfolio"}/>
                 </Fade>
                 <div className={s.Works}>
-                    <Zoom cascade={true} triggerOnce={true} duration={800}>
+                    <Zoom cascade={true} triggerOnce={true}  duration={800} delay={-150}>
                         {works.map((el, index) =>
                             <Work
                                 key={index}

@@ -15,14 +15,14 @@ const About = () => {
                     </Fade>
                 </div>
                 <div className={s.TextContainer}>
-                    <Fade direction={"down"} triggerOnce={true}>
+                    <Fade direction={"down"} triggerOnce={true} delay={-150}>
                         <Title title={"Egor Kirillov"} second={"About"}/>
                     </Fade>
                     <Bounce triggerOnce={true}>
                         <span className={s.SpanAbout}>Frontend Developer | React</span>
                     </Bounce>
                     <div className={s.Text}>
-                        <Slide direction={"right"} cascade damping={0.1} triggerOnce={true}>
+                        <Slide direction={"right"} cascade damping={0.1} triggerOnce={true} delay={-150}>
                             <p>
                                 I'm considering office or remote work options.
                                 My name is Bernard Sydney. I am a Web Developer, and I'm very passionate and dedicated

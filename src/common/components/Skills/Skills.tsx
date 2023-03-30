@@ -11,11 +11,11 @@ const Skills = () => {
     return (
         <div className={s.SkillsBlock} id="skills">
             <div className={s.SkillsContainer}>
-                <Fade direction={"down"} triggerOnce={true}>
+                <Fade direction={"down"} triggerOnce={true} delay={-150}>
                     <Title title={"Skills &"} second={"Abilities"}/>
                 </Fade>
                 <div className={s.Skills}>
-                    <Zoom cascade={true} triggerOnce={true} duration={800}>
+                    <Zoom cascade={true} triggerOnce={true} duration={800} delay={-150}>
                         <Skill title={'TypeScript'} description={'test description1'} src={TS} alt={"TS"}/>
                         <Skill title={'Redux'}
                                description={'Experience with the Redux library, I understand its fundamental concepts: including state, actions, reducers and storage.'}
