@@ -5,7 +5,7 @@ import Title from "../Title/Title";
 import TodoImage from "../../assets/images/photos/todolist.jpg"
 import SocialImage from "../../assets/images/photos/socialnetwork.jpg"
 import CounterImage from "../../assets/images/photos/counter.jpg"
-import {Fade, Zoom} from "react-awesome-reveal";
+import {AttentionSeeker, Zoom} from "react-awesome-reveal";
 
 const Works = () => {
 
@@ -43,11 +43,11 @@ const Works = () => {
     return (
         <div className={s.WorksBlock} id="works">
             <div className={s.WorksContainer}>
-                <Fade direction={"down"} triggerOnce={true} delay={-150}>
+                <AttentionSeeker effect={"pulse"} triggerOnce={true}>
                     <Title title={"Featured Works"} second={"Portfolio"}/>
-                </Fade>
+                </AttentionSeeker>
                 <div className={s.Works}>
-                    <Zoom cascade={true} triggerOnce={true}  duration={800} delay={-150}>
+                    <Zoom cascade={true} triggerOnce={true}  duration={800} delay={-250}>
                         {works.map((el, index) =>
                             <Work
                                 key={index}

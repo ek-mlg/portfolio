@@ -38,13 +38,13 @@ const Footer = () => {
             <address className={s.FooterWrapper}>
 
                 <div className={s.IconsContainer}>
-                    <Fade cascade={true} triggerOnce={true} direction={"down"} duration={500} delay={-150}>
+                    <Fade cascade={true} triggerOnce={true} direction={"down"} duration={500} delay={-250}>
                         {iconsState.map((el, index) => <a key={index} href={el.href} target={el.target} rel={el.rel}>
                             <Icons src={el.src} alt={el.alt}/>
                         </a>)}
                     </Fade>
                 </div>
-                <Fade cascade={true} triggerOnce={true} direction={"down"} delay={-150}>
+                <Fade cascade={true} triggerOnce={true} direction={"down"} delay={-250}>
                     <div className={s.TextContainer}>
                         <span className={s.Title}>Egor Kirillov</span>
                         <span className={s.Title}>Frontend-developer</span>
@@ -55,7 +55,6 @@ const Footer = () => {
                     </div>
                     <div className={s.TextContainer}>
                         <span className={s.Copyright}>© {yearDate} All rights reserved</span>
-
                     </div>
                 </Fade>
             </address>

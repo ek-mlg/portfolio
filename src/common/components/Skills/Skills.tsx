@@ -5,17 +5,17 @@ import Title from "../Title/Title";
 import TS from '../../assets/images/icons/ts.svg';
 import Redux from '../../assets/images/icons/redux.svg';
 import ReactSVG from '../../assets/images/icons/react.svg';
-import {Fade, Zoom} from "react-awesome-reveal";
+import {AttentionSeeker, Zoom} from "react-awesome-reveal";
 
 const Skills = () => {
     return (
         <div className={s.SkillsBlock} id="skills">
             <div className={s.SkillsContainer}>
-                <Fade direction={"down"} triggerOnce={true} delay={-150}>
+                <AttentionSeeker effect={"pulse"} triggerOnce={true}>
                     <Title title={"Skills &"} second={"Abilities"}/>
-                </Fade>
+                </AttentionSeeker>
                 <div className={s.Skills}>
-                    <Zoom cascade={true} triggerOnce={true} duration={800} delay={-150}>
+                    <Zoom cascade={true} triggerOnce={true} duration={800} delay={-250}>
                         <Skill title={'TypeScript'} description={'test description1'} src={TS} alt={"TS"}/>
                         <Skill title={'Redux'}
                                description={'Experience with the Redux library, I understand its fundamental concepts: including state, actions, reducers and storage.'}

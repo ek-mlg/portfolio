@@ -3,26 +3,26 @@ import s from './About.module.scss';
 import Title from "../Title/Title";
 import Button from "../Button/Button";
 import p from '../../assets/images/photos/secondPhoto.jpeg';
-import {Bounce, Fade, Slide} from "react-awesome-reveal";
+import {AttentionSeeker, Bounce, Fade, Slide} from "react-awesome-reveal";
 
 const About = () => {
     return (
         <div className={s.AboutBlock} id="about">
             <div className={s.AboutContainer}>
                 <div className={s.ImgContainer}>
-                    <Fade duration={3000} triggerOnce={true}>
+                    <Fade duration={3000} triggerOnce={true} delay={-250} >
                         <img className={s.Img} alt={"Img"} src={p}/>
                     </Fade>
                 </div>
                 <div className={s.TextContainer}>
-                    <Fade direction={"down"} triggerOnce={true} delay={-150}>
+                    <AttentionSeeker effect={"pulse"} triggerOnce={true}>
                         <Title title={"Egor Kirillov"} second={"About"}/>
-                    </Fade>
-                    <Bounce triggerOnce={true}>
+                    </AttentionSeeker>
+                    <Bounce triggerOnce={true} fraction={1}>
                         <span className={s.SpanAbout}>Frontend Developer | React</span>
                     </Bounce>
                     <div className={s.Text}>
-                        <Slide direction={"right"} cascade damping={0.1} triggerOnce={true} delay={-150}>
+                        <Slide direction={"right"} cascade damping={0.1} triggerOnce={true} delay={-250}>
                             <p>
                                 I'm considering office or remote work options.
                                 My name is Bernard Sydney. I am a Web Developer, and I'm very passionate and dedicated
