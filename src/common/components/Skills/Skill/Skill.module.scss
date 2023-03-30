@@ -7,7 +7,6 @@
   display: flex;
   align-items: flex-start;
   gap: 25px;
-  cursor: e-resize;
 
   box-sizing: $box-sizing;
   .Text {
@@ -27,8 +26,6 @@
                       1.4,
                       0.2px
       );
-
-      cursor: e-resize;
 
       box-sizing: $box-sizing;
     }

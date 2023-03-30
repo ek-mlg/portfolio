@@ -6,7 +6,7 @@ import In from "../../assets/images/icons/in.svg";
 import Facebook from "../../assets/images/icons/facebook.svg";
 import Telegram from "../../assets/images/icons/telegram.svg";
 import GitHub from "../../assets/images/icons/github.svg";
-import {Fade} from "react-awesome-reveal";
+import {AttentionSeeker, Fade} from "react-awesome-reveal";
 
 const Footer = () => {
 
@@ -38,11 +38,11 @@ const Footer = () => {
             <address className={s.FooterWrapper}>
 
                 <div className={s.IconsContainer}>
-                    <Fade cascade={true} triggerOnce={true} direction={"down"} duration={500} delay={-250}>
+                    <AttentionSeeker effect={"pulse"} cascade={true} triggerOnce={true} duration={400}>
                         {iconsState.map((el, index) => <a key={index} href={el.href} target={el.target} rel={el.rel}>
                             <Icons src={el.src} alt={el.alt}/>
                         </a>)}
-                    </Fade>
+                    </AttentionSeeker>
                 </div>
                 <Fade cascade={true} triggerOnce={true} direction={"down"} delay={-250}>
                     <div className={s.TextContainer}>

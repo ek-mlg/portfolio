@@ -17,11 +17,8 @@
         .Skills {
             padding-top: 105px;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 50px;
 
+            flex-wrap: wrap;
             box-sizing: $box-sizing;
         }
     }

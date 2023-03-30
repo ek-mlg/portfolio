@@ -7,6 +7,7 @@ import Works from "./common/components/Works/Works";
 import Contacts from "./common/components/Contacts/Contacts";
 import Footer from "./common/components/Footer/Footer";
 import About from "./common/components/About/About";
+import Carousel from "./common/components/Carousel /Carousel";
 
 function App() {
 
