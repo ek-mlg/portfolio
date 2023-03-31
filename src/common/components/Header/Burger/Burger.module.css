@@ -1,5 +1,5 @@
 .BurgerNavItems {
-    background-color: black;
+    background-color: blueviolet;
     position: absolute;
     top: 80px;
     left: 0;
@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    transform: translate(0, -250px);
+    transform: translate(0, -330px);
     transition: 0.7s;
     z-index: 0;
     justify-content: center;
@@ -18,7 +18,7 @@
 
 .Show {
     border-top: solid red;
-    transform: translate(0, 0);
+    transform: translate(0, 0px);
     color: white;
     gap: 20px;
     height: 350px;
