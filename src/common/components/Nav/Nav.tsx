@@ -1,32 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import s from './Nav.module.scss';
 import {Link} from "react-scroll";
 
 
 const Nav = () => {
 
-    function useWindowSize() {
-        const [windowSize, setWindowSize] = useState(0);
-        useEffect(() => {
-            function handleResize() {
-                setWindowSize(window.innerWidth)
-            }
-
-            window.addEventListener("resize", handleResize);
-            handleResize();
-            return () => window.removeEventListener("resize", handleResize);
-        }, []);
-        return windowSize;
-    }
-
-    const size = useWindowSize()
-
-    console.log(size)
-
     return (
         <>
-            {size > 1040
-                ?
                 <div className={s.Nav}>
                     <Link
                         className={s.Current}
@@ -89,11 +69,6 @@ const Nav = () => {
                         Contacts
                     </Link>
                 </div>
-                :
-                <h4 style={{
-                    color: "white",
-                }}>МЕНЮ</h4>
-            }
         </>
 
     );

@@ -21,7 +21,11 @@ const Footer = () => {
             src: Telegram,
             alt: "Telegram"
         },
-        {href: "https://wa.me/89190161763", target: "_blank", rel: "noreferrer", src: WhatsApp, alt: "WhatsApp"},
+        {
+            href: "https://wa.me/89190161763",
+            target: "_blank", rel: "noreferrer",
+            src: WhatsApp,
+            alt: "WhatsApp"},
         {
             href: "https://www.facebook.com/profile.php?id=100011402307623",
             target: "_blank",
@@ -29,8 +33,18 @@ const Footer = () => {
             src: Facebook,
             alt: "Facebook"
         },
-        {href: "https://www.linkedin.com/in/ek-mlg", target: "_blank", rel: "noreferrer", src: In, alt: "Linkedin"},
-        {href: "https://github.com/ek-mlg", target: "_blank", rel: "noreferrer", src: GitHub, alt: "GitHub"}
+        {
+            href: "https://www.linkedin.com/in/ek-mlg",
+            target: "_blank",
+            rel: "noreferrer",
+            src: In,
+            alt: "Linkedin"},
+        {
+            href: "https://github.com/ek-mlg",
+            target: "_blank",
+            rel: "noreferrer",
+            src: GitHub,
+            alt: "GitHub"}
     ]
 
     return (
