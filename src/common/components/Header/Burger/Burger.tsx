@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from "react-scroll";
-import s from "./Burger.module.css";
+import s from "./Burger.module.scss";
+import Test from "../../test/Test";
 
 const Burger = () => {
 
@@ -12,18 +13,16 @@ const Burger = () => {
     useEffect(() => {
         open && (document.body.style.overflow = 'hidden')
         !open && (document.body.style.overflow = 'unset')
+
     }, [open])
 
     console.log(open)
 
     return (
         <>
-            <h4
-                style={{color: "white", zIndex: 1}}
-                onClick={onClickHandler}
-            >
-                МЕНЮ
-            </h4>
+            <div className={s.menuWrapper} onClick={onClickHandler}>
+                <div className={open ? `${s.hamburgerMenu} ${s.animate}` : s.hamburgerMenu}></div>
+            </div>
 
             <div className={open ? `${s.BurgerNavItems} ${s.Show}` : s.BurgerNavItems}>
                 <Link
@@ -91,6 +90,8 @@ const Burger = () => {
                 >
                     Contacts
                 </Link>
+            </div>
+            <div className={open ? `${s.Background} ${s.BackgroundShow}` : s.Background}>
             </div>
         </>
     );
