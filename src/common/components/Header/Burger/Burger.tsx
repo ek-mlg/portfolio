@@ -35,6 +35,7 @@ const Burger = () => {
                     hashSpy={true}
                     offset={-100}
                     duration={500}
+                    onClick={onClickHandler}
                 >
                     Home
                 </Link>
@@ -47,6 +48,7 @@ const Burger = () => {
                     hashSpy={true}
                     offset={-100}
                     duration={500}
+                    onClick={onClickHandler}
                 >
                     About
                 </Link>
@@ -59,6 +61,7 @@ const Burger = () => {
                     hashSpy={true}
                     offset={-100}
                     duration={500}
+                    onClick={onClickHandler}
                 >
                     Skills
                 </Link>
@@ -71,6 +74,7 @@ const Burger = () => {
                     hashSpy={true}
                     offset={-100}
                     duration={500}
+                    onClick={onClickHandler}
                 >
                     Works
                 </Link>
@@ -83,6 +87,7 @@ const Burger = () => {
                     hashSpy={true}
                     offset={-100}
                     duration={500}
+                    onClick={onClickHandler}
                 >
                     Contacts
                 </Link>

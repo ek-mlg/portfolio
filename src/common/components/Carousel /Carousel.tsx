@@ -45,7 +45,7 @@ const Carousel = () => {
         ]
     };
     return (
-        <Slide cascade={true} triggerOnce={true} direction={"left"}>
+        /*<Slide cascade={true} triggerOnce={true} direction={"left"}>*/
             <Slider {...settings}>
                 <Skill title={'TypeScript'} description={'test description1'} src={TS} alt={"TS"}/>
                 <Skill title={'Redux'}
@@ -69,7 +69,7 @@ const Carousel = () => {
                        description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
                        src={ReactSVG} alt={"React"}/>
             </Slider>
-        </Slide>
+        /*</Slide>*/
     );
 };
 

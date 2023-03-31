@@ -47,7 +47,7 @@ const Works = () => {
                     <Title title={"Featured Works"} second={"Portfolio"}/>
                 </AttentionSeeker>
                 <div className={s.Works}>
-                    <Slide triggerOnce={true} direction={"right"} >
+                    {/*<Slide triggerOnce={true} direction={"right"} >*/}
                         {works.map((el, index) =>
                             <Work
                                 key={index}
@@ -56,7 +56,7 @@ const Works = () => {
                                 style={el.style}
                                 href={el.href}
                             />)}
-                    </Slide>
+                    {/*</Slide>*/}
                 </div>
             </div>
         </div>
