@@ -48,11 +48,10 @@
   }
   @media (max-width: 1040px) {
     background-color: $bgColor;
-      height: 100px
   }
 }
 .Scroll {
-  height: 100px;
+  height: 80px;
   background-color: $bgColor;
   box-shadow: 0 5px 20px -6px rgba(255, 255, 255, 0.1);
 }
