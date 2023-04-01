@@ -41,19 +41,33 @@
 
       cursor: default;
 
-      z-index: 2;
+      z-index: 3;
 
       box-sizing: $box-sizing;
     }
+
+    .Nav {
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      box-sizing: $box-sizing;
+    }
+
+
   }
   @media (max-width: 1040px) {
     background-color: $bgColor;
   }
 }
 .Scroll {
-  height: 80px;
+  height: 100px;
   background-color: $bgColor;
   box-shadow: 0 5px 20px -6px rgba(255, 255, 255, 0.1);
+  @media (max-width: 1040px) {
+    height: 80px;
+  }
 }
 
 

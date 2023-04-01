@@ -1,120 +1,135 @@
+@import "../../../assets/styles/variables.sass";
+@import "../../../assets/styles/mixins";
 
 .BurgerNavItems {
-    background-color: black;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translate(0, -330px);
-    transition: 0.7s;
-    z-index: 1;
-    justify-content: center;
-    gap: 0;
-    color: transparent;
-    height: 250px;
+  background-color: transparent;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  transform: translate(0, -330px);
+  transition: 0.7s;
+  z-index: 1;
+  justify-content: center;
+  gap: 0;
+  color: transparent;
+  height: 200px;
+  box-sizing: $box-sizing;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Show {
-    border-top: solid red;
-    transform: translate(0, 0);
-    color: white;
-    gap: 20px;
-    height: 350px;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  transform: translate(0, 0);
+  color: white;
+  gap: 15px;
+  height: 300px;
+  background: black;
+  .Current {
+    word-wrap: break-word;
+
+    @include text(
+                    $textColor,
+                    $text,
+                    normal,
+                    15px,
+                    400,
+                    30px,
+                    0.2px
+    );
+    box-sizing: $box-sizing;
+  }
 }
+
 
 .Background {
-    display: flex;
-    height: 0;
-    background-color: transparent;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: background-color 0.3s ease-in-out;
-    z-index: 0;
+  display: flex;
+  height: 0;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 0;
+  box-sizing: $box-sizing;
 }
-
 .BackgroundShow {
-    height: 100vh;
-    background-color: black;
-    opacity: 0.4;
+  height: 100vh;
+  opacity: 0.4;
 }
 
-
-.Current {
-    font-size: 20px;
-}
 
 // Burger
 
-$bar-width: 35px;
-$bar-height: 3px;
-$bar-spacing: 12px;
+$bar-width: 30px;
+$bar-height: 2px;
+$bar-spacing: 8px;
 
 .menuWrapper {
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 70%;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: $bar-width;
-    height: $bar-height + $bar-spacing * 2;
-    cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 70%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: $bar-width;
+  height: $bar-height + $bar-spacing * 2;
+  cursor: pointer;
+  box-sizing: $box-sizing;
 }
 
 .hamburgerMenu,
 .hamburgerMenu:after,
 .hamburgerMenu:before {
-    width: $bar-width;
-    height: $bar-height;
+  width: $bar-width;
+  height: $bar-height;
 }
 
 .hamburgerMenu {
-    position: relative;
-    transform: translateY($bar-spacing);
-    background: rgba(255, 255, 255, 1);
-    transition: all 0ms 300ms;
+  position: relative;
+  transform: translateY($bar-spacing);
+  background: rgba(255, 255, 255, 1);
+  transition: all 0ms 300ms;
 
-    &.animate {
-        background: rgba(229, 16, 16, 0);
-    }
+  &.animate {
+    background: rgba(229, 16, 16, 0);
+  }
 }
 
 .hamburgerMenu:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: $bar-spacing;
-    background: rgba(255, 255, 255, 1);
-    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-    transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: $bar-spacing;
+  background: rgba(255, 255, 255, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+  transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburgerMenu:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: $bar-spacing;
-    background: rgba(255, 255, 255, 1);
-    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-    transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: $bar-spacing;
+  background: rgba(255, 255, 255, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+  transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburgerMenu.animate:after {
-    top: 0;
-    transform: rotate(45deg);
-    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
-    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+  transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburgerMenu.animate:before {
-    bottom: 0;
-    transform: rotate(-45deg);
-    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
-    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+  transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }

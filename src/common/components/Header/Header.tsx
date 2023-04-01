@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import s from './Header.module.scss';
-import Nav from "../Nav/Nav";
 import Burger from "./Burger/Burger";
+import Links from "../Header/Links/Links"
 
 
 const Header = () => {
@@ -41,7 +41,9 @@ const Header = () => {
                 <h3 className={s.Logo}>eK</h3>
                 {size > 1040
                     ?
-                    <Nav/>
+                    <div className={s.Nav}>
+                        <Links offset={-90}/>
+                    </div>
                     :
                     <Burger/>
                 }
