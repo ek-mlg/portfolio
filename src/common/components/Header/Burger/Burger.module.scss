@@ -23,10 +23,9 @@
 .Show {
   border-top: 1px solid rgba(255, 255, 255, .1);
   transform: translate(0, 0);
-  color: white;
   gap: 15px;
   height: 300px;
-  background: black;
+  background: $bgColor;
   .Current {
     word-wrap: break-word;
 
@@ -58,7 +57,8 @@
 }
 .BackgroundShow {
   height: 100vh;
-  opacity: 0.4;
+  opacity: 0.5;
+  background: $bgColor;
 }
 
 
