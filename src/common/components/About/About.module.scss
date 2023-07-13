@@ -13,12 +13,12 @@
 
     box-sizing: $box-sizing;
 
+
     @include container();
 
     .ImgContainer {
       width: 50%;
       height: 470px;
-
       box-sizing: $box-sizing;
 
       .Img {
@@ -86,7 +86,7 @@
           display: flex;
           justify-content: center;
           height: 310px;
-          width: 310px;
+          width: 100%;
         }
       }
       .TextContainer {

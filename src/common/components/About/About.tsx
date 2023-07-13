@@ -3,25 +3,17 @@ import s from './About.module.scss';
 import Title from "../Title/Title";
 import Button from "../Button/Button";
 import p from '../../assets/images/photos/secondPhoto.jpeg';
-import {AttentionSeeker, Bounce, Fade, Slide} from "react-awesome-reveal";
 
 const About = () => {
     return (
         <div className={s.AboutBlock} id="about">
             <div className={s.AboutContainer}>
                 <div className={s.ImgContainer}>
-                    <Fade duration={3000} triggerOnce={true} delay={-250} >
-                        <img className={s.Img} alt={"Img"} src={p}/>
-                    </Fade>
+                        <img className={s.Img} alt={"My main photo"} src={p}/>
                 </div>
                 <div className={s.TextContainer}>
-                    <AttentionSeeker effect={"pulse"} triggerOnce={true}>
                         <Title title={"Egor Kirillov"} second={"About"}/>
-                    </AttentionSeeker>
-                    <Slide direction={"right"} cascade={true} damping={0.1} triggerOnce={true} duration={400}>
                         <span className={s.SpanAbout}>Frontend Developer | React</span>
-                    </Slide>
-                    <AttentionSeeker effect={"pulse"} cascade={true} triggerOnce={true} duration={1000}>
                     <div className={s.Text}>
 
                             <p>
@@ -38,7 +30,6 @@ const About = () => {
                             </p>
                     </div>
                         <Button text={"Download CV"} href={"href"}/>
-                </AttentionSeeker>
                 </div>
             </div>
         </div>

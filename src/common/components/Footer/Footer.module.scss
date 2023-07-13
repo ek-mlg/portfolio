@@ -78,6 +78,10 @@
         );
       }
     }
+
+    @media (max-width: 1040px) {
+      width: 90%;
+    }
   }
 
   @media (max-width: 1040px) {

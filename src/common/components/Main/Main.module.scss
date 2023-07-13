@@ -72,23 +72,21 @@
       );
 
       display: inline-block;
-
       box-sizing: $box-sizing;
 
     }
   }
-
   .Photo {
     width: 65%;
     vertical-align: middle;
     object-fit: cover;
-    box-sizing: $box-sizing;
   }
 
   @media (max-width: 1040px) {
     .Text {
       left: 10%;
       bottom: 15%;
+
       .Title {
         font-size: 60px;
 

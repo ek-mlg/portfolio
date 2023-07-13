@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import {Link} from "react-scroll";
 import s from "./Burger.module.scss";
 import Links from "../Links/Links";
 
@@ -16,7 +15,6 @@ const Burger = () => {
 
     }, [open])
 
-    console.log(open)
 
     return (
         <>

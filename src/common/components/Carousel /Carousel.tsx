@@ -6,7 +6,6 @@ import Skill from "../Skills/Skill/Skill";
 import TS from '../../assets/images/icons/ts.svg';
 import Redux from '../../assets/images/icons/redux.svg';
 import ReactSVG from '../../assets/images/icons/react.svg';
-import {Slide} from "react-awesome-reveal";
 
 
 const Carousel = () => {

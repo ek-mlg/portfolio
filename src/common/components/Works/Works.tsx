@@ -5,7 +5,6 @@ import Title from "../Title/Title";
 import TodoImage from "../../assets/images/photos/todolist.jpg"
 import SocialImage from "../../assets/images/photos/socialnetwork.jpg"
 import CounterImage from "../../assets/images/photos/counter.jpg"
-import {AttentionSeeker, Slide} from "react-awesome-reveal";
 
 const Works = () => {
 
@@ -43,20 +42,16 @@ const Works = () => {
     return (
         <div className={s.WorksBlock} id="works">
             <div className={s.WorksContainer}>
-                <AttentionSeeker effect={"pulse"} triggerOnce={true}>
-                    <Title title={"Featured Works"} second={"Portfolio"}/>
-                </AttentionSeeker>
+                <Title title={"Featured Works"} second={"Portfolio"}/>
                 <div className={s.Works}>
-                    {/*<Slide triggerOnce={true} direction={"right"} >*/}
-                        {works.map((el, index) =>
-                            <Work
-                                key={index}
-                                workTitle={el.workTitle}
-                                workDescription={el.workDescription}
-                                style={el.style}
-                                href={el.href}
-                            />)}
-                    {/*</Slide>*/}
+                    {works.map((el, index) =>
+                        <Work
+                            key={index}
+                            workTitle={el.workTitle}
+                            workDescription={el.workDescription}
+                            style={el.style}
+                            href={el.href}
+                        />)}
                 </div>
             </div>
         </div>

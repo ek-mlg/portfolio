@@ -4,13 +4,11 @@
 
 .ContactsBlock {
   min-height: auto;
-
   box-sizing: $box-sizing;
 
   .ContactsContainer {
     justify-content: flex-start;
     flex-direction: column;
-
     box-sizing: $box-sizing;
 
     @include container();
@@ -20,20 +18,17 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-
+      justify-content: space-between;
       box-sizing: $box-sizing;
 
       .Form {
         width: 570px;
-        gap: 20px;
         display: flex;
         flex-direction: column;
-
         box-sizing: $box-sizing;
 
         .Text {
           padding-bottom: 20px;
-
           box-sizing: $box-sizing;
 
           @include text(
@@ -47,9 +42,31 @@
           );
         }
 
+        .Input {
+          border: 1px solid rgba(255, 255, 255, .3);
+          background-color: transparent;
+          width: 100%;
+          height: 44px;
+          vertical-align: middle;
+          padding: 10px;
+          border-radius: 5px;
+
+          @include text(
+                          $textColor,
+                          $textSecond,
+                          italic,
+                          13px,
+                          400,
+                          1.6,
+                          0.2px
+          );
+
+          box-sizing: $box-sizing;
+        }
+
         .Textarea {
-          height: 120px;
-          resize: none;
+          resize: vertical;
+          min-height: 120px;
           margin-bottom: 20px;
           background-color: transparent;
           font-style: italic;
@@ -68,6 +85,9 @@
         }
         Button[type="submit"] {
           @extend .Btn;
+        }
+        @media (max-width: 1040px) {
+          padding-bottom: 80px;
         }
       }
     }
