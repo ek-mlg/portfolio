@@ -15,7 +15,6 @@ const About = () => {
                         <Title title={"Egor Kirillov"} second={"About"}/>
                         <span className={s.SpanAbout}>Frontend Developer | React</span>
                     <div className={s.Text}>
-
                             <p>
                                 I'm considering office or remote work options.
                                 My name is Bernard Sydney. I am a Web Developer, and I'm very passionate and dedicated
