@@ -21,14 +21,18 @@
       height: 470px;
       box-sizing: $box-sizing;
 
-      .Img {
-        height: 375px;
+      .Tilt {
+        transition: transform 0.3s ease;
         width: 415px;
-        border-radius: 5px;
-        vertical-align: middle;
-        object-fit: cover;
+        .Img {
+          height: 375px;
+          width: 415px;
+          border-radius: 5px;
+          vertical-align: middle;
+          object-fit: cover;
 
-        box-sizing: $box-sizing;
+          box-sizing: $box-sizing;
+        }
       }
     }
 

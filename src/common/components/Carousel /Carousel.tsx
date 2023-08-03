@@ -3,9 +3,7 @@ import Slider from "react-slick";
 import "./slick.css";
 import "./slick-theme.css";
 import Skill from "../Skills/Skill/Skill";
-import TS from '../../assets/images/icons/ts.svg';
-import Redux from '../../assets/images/icons/redux.svg';
-import ReactSVG from '../../assets/images/icons/react.svg';
+import {skillsData} from "../../../data";
 
 
 const Carousel = () => {
@@ -44,31 +42,9 @@ const Carousel = () => {
         ]
     };
     return (
-        /*<Slide cascade={true} triggerOnce={true} direction={"left"}>*/
             <Slider {...settings}>
-                <Skill title={'TypeScript'} description={'test description1'} src={TS} alt={"TS"}/>
-                <Skill title={'Redux'}
-                       description={'Experience with the Redux library, I understand its fundamental concepts: including state, actions, reducers and storage.'}
-                       src={Redux} alt={"Redux"}/>
-                <Skill title={'React'}
-                       description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
-                       src={ReactSVG} alt={"React"}/>
-                <Skill title={'TypeScript'} description={'test description1'} src={TS} alt={"TS"}/>
-                <Skill title={'Redux'}
-                       description={'Experience with the Redux library, I understand its fundamental concepts: including state, actions, reducers and storage.'}
-                       src={Redux} alt={"Redux"}/>
-                <Skill title={'React'}
-                       description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
-                       src={ReactSVG} alt={"React"}/>
-                <Skill title={'TypeScript'} description={'test description1'} src={TS} alt={"TS"}/>
-                <Skill title={'Redux'}
-                       description={'Experience with the Redux library, I understand its fundamental concepts: including state, actions, reducers and storage.'}
-                       src={Redux} alt={"Redux"}/>
-                <Skill title={'React'}
-                       description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
-                       src={ReactSVG} alt={"React"}/>
+                {skillsData.map((sk, index)=> <Skill key={index} title={sk.title} description={sk.description} src={sk.src} alt={sk.alt}/>)}
             </Slider>
-        /*</Slide>*/
     );
 };
 

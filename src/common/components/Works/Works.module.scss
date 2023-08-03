@@ -3,7 +3,6 @@
 
 .WorksBlock {
   min-height: auto;
-
   box-sizing: $box-sizing;
 
   .WorksContainer {
@@ -21,7 +20,7 @@
       flex-wrap: wrap;
       align-items: flex-start;
       padding-top: 105px;
-
+      gap: 50px;
       box-sizing: $box-sizing;
       @media (max-width: 1040px) {
         gap: 50px;
