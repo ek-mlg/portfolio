@@ -85,12 +85,14 @@
       .ImgContainer {
         width: 100%;
         height: 360px;
-
+        .Tilt{
+          width: 100%;
         .Img {
           display: flex;
           justify-content: center;
           height: 310px;
           width: 100%;
+        }
         }
       }
       .TextContainer {
